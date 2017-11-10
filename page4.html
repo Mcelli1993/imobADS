@@ -66,11 +66,12 @@
       <div class="table-wrapper">
         <div class="container">
           <div class="row search">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-              <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7">Buscar:</label>
-                <input class="form-control input-sm form-control-lg" disabled="" placeholder="Buscar" type="text" name="search"> </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+              <form class="form-inline" method="post" action="https://formspree.io/">
+                <input type="email" name="email" class="form-control" placeholder="Buscar">
+                <button type="submit" class="btn btn-primary">Buscar</button>
+              </form>
             </div>
           </div>
         </div>
