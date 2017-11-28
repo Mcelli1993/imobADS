@@ -30,7 +30,7 @@
                     
                          <img src="assets/images/logo-casa-340x309.png" alt="Mobirise" title="" media-simple="true" style="height: 3.8rem;">
                     
-                </span> <span class="navbar-caption-wrap"><a class="navbar-caption text-success display-5" href="index.html#header12-m">imobADS</a></span> </div>
+                </span> <span class="navbar-caption-wrap"><a class="navbar-caption text-success display-5" href="index.php#header12-m">imobADS</a></span> </div>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
@@ -42,7 +42,7 @@
           </li>
         </ul>
         <div class="navbar-buttons mbr-section-btn">
-          <a class="btn btn-sm btn-primary display-4" href="#top"><span class="mbri-user mbr-iconfont mbr-iconfont-btn"></span>LOGIN</a>
+          <a class="btn btn-sm btn-primary display-4" href="login.php"><span class="mbri-user mbr-iconfont mbr-iconfont-btn"></span>LOGIN</a>
         </div>
       </div>
     </nav>
@@ -60,19 +60,18 @@
     </div>
     <div class="container">
       <!-- <div data-form-alert="" hidden="">Logado</div> -->
-      <form class="mbr-form w-50 h-50 mr-auto" action="PHP/logincontrole.php" method="post"> <label>Nome</label>
-        <input type="text" name="name" class="form-control border border-dark form-control-lg" placeholder="Digite o nome"> <label>Senha</label>
-        <input type="password" name="password" class="form-control" placeholder="Digite a senha">
-        <button type="submit" class="btn text-center btn-dark text-uppercase m-5">ENVIAR</button>
-      </form> <span class="input-group-btn text-center"></span> </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <form class="mbr-form mr-auto w-100 h-100" action="PHP/logincontrole.php" method="post"> <label>Nome</label>
+            <input type="text" name="name" class="form-control border border-dark form-control-lg" placeholder="Digite o nome"> <label>Senha</label>
+            <input type="password" name="password" class="form-control" placeholder="Digite a senha">
+            <button type="submit" class="btn btn-dark text-uppercase m-5 text-nowrap">ENVIAR</button>
+          </form>
+        </div>
+        <div class="col-md-4"></div>
+      </div> <span class="input-group-btn text-center"></span> </div>
   </section>
-  <div class="py-5">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12"></div>
-      </div>
-    </div>
-  </div>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
