@@ -35,7 +35,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
           <li class="nav-item">
-            <a class="nav-link link text-white display-4" href="index.html"> <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span> Serviços</a>
+            <a class="nav-link link text-white display-4" href="index.php"> <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span> Serviços</a>
           </li>
           <li class="nav-item">
             <a class="nav-link link text-white display-4" href="https://mobirise.com"> <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span> Sobre</a>
@@ -59,27 +59,20 @@
       </div>
     </div>
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="media-container-column col-lg-8" data-form-type="formoid">
-          <div data-form-alert="" hidden="">Logado</div>
-          <form class="mbr-form" action="PHP/login.php" method="post" data-form-title="Mobirise Form">
-            <input type="hidden" data-form-email="true" value="uNRaejTr8wuLhG9gWNrZz2RZ4PEY4C4iX2ZIJvLQwoQ5rCNvzwHGbRDkXFd4KERsC1Wk2du7WnFIWGDOMZnXUYhliVQY50K4D+OF+kK8Fu37kRXW3NF/68UgnB2FclFN">
-            <div class="row row-sm-offset">
-              <div class="col-md-10 multi-horizontal" data-for="name">
-                <div class="form-group w-75"> <label class="form-control-label mbr-fonts-style display-7" for="name-form1-w">Nome</label>
-                  <input type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-w" size="2"> </div>
-              </div>
-            </div>
-            <div class="row row-sm-offset">
-              <div class="col-md-10 multi-horizontal" data-for="password">
-                <div class="form-group w-75"> <label class="form-control-label mbr-fonts-style display-7" for="email-form1-w">Senha</label>
-                  <input type="password" class="form-control" name="password" data-form-field="password" required="" id="name-form1-w" size="2"> </div>
-              </div>
-            </div> <span class="input-group-btn text-center"><button href="" type="submit" class="btn btn-form btn-black-outline display-4">ENTRAR</button></span> </form>
-        </div>
+      <!-- <div data-form-alert="" hidden="">Logado</div> -->
+      <form class="mbr-form w-50 h-50 mr-auto" action="PHP/logincontrole.php" method="post"> <label>Nome</label>
+        <input type="text" name="name" class="form-control border border-dark form-control-lg" placeholder="Digite o nome"> <label>Senha</label>
+        <input type="password" name="password" class="form-control" placeholder="Digite a senha">
+        <button type="submit" class="btn text-center btn-dark text-uppercase m-5">ENVIAR</button>
+      </form> <span class="input-group-btn text-center"></span> </div>
+  </section>
+  <div class="py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12"></div>
       </div>
     </div>
-  </section>
+  </div>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
