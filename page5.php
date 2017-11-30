@@ -84,15 +84,20 @@
         <div class="title col-12 col-lg-8"> </div>
       </div>
       <div class="row py-2 justify-content-center">
-        <div class="col-12 col-lg-6  col-md-6 " data-form-type="formoid">
+        <div class="col-12 col-lg-6  col-md-3 " data-form-type="formoid">
           <div data-form-alert="" hidden="">Thanks for filling out the form!</div>
-          <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
+          <form class="mbr-form" action="page5.php" method="post" data-form-title="Mobirise Form">
             <input type="hidden" data-form-email="true" value="AcjDyygK6QxFyLdoAQ/lYEwfPacwnUzbz9yEv+et9RpeIBEdEe2tRJcNV5sfBw26uJAOHTCuBuQBvvfUgEjutKoRsjnUvoeI6L7HVTKtaKHWI3q8J61LswEx8oYT4NFQ">
             <div class="mbr-subscribe input-group">
-              <input class="form-control" type="email" name="email" placeholder="Digite sua busca" data-form-field="Email" required="" id="email-form3-1t"> <span class="input-group-btn"><button href="" type="submit" name="buscar" class="btn btn-primary display-4">BUSCAR</button></span> </div>
-          </form>
+              <input class="form-control" type="text" name="buscar" placeholder="Digite sua busca" data-form-field="Email" required="" id="email-form3-1t"> <span class="input-group-btn"></span> </div>
+          
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
+         
+            <button type="submit" class="btn btn-primary">BUSCAR</button>
+          
+        </div>
+        <div class="col-md-3">
           <div class="btn-group">
             <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> SELECIONE</button>
             <div class="dropdown-menu">
@@ -118,7 +123,6 @@
           </div>
         </div>
         <div class="container scroll">
-          <div class="form-group"></div>
           <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
             <thead>
               <tr class="table-heads ">
@@ -157,6 +161,7 @@
               <tr></tr>
             </tbody>
           </table>
+          </form>
         </div>
         <div class="container table-info-container">
           <div class="row info">

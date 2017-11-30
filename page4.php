@@ -53,10 +53,7 @@
   </section>
   <section class="section-table cid-qzXo3mIDUU bg-light" id="table1-1n" data-rv-view="354">
     <div class="container container-table">
-      <div class="row">
-        <div class="col-md-12"></div>
-      </div>
-      <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5"></h3>
+      <div class="row"></div>
       <div class="row">
         <div class="col-md-12">
           <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-1 text-dark">
@@ -69,8 +66,8 @@
             <div class="col-md-6"></div>
             <div class="col-md-6">
               <form class="form-inline" method="post" action="https://formspree.io/">
-                <input type="text" name="email" class="form-control" placeholder="Buscar">
-                <button type="submit" data-toggle="" name="buscar" class="btn btn-primary">Buscar</button>
+                <input type="text" name="buscar" class="form-control" placeholder="Buscar">
+                <button type="submit" data-toggle="" name="btnbuscar" class="btn btn-primary">Buscar</button>
               </form>
             </div>
           </div>

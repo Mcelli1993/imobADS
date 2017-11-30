@@ -74,13 +74,28 @@
           <h3 class="mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style display-2">&nbsp; Formulário de Cadastro
             <br>de &nbsp;Usuários
             <br> </h3>
-        </div>
-      </div>
-      <div class="row py-2 justify-content-center">
-        <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
-          <form class="mbr-form" action="https://mobirise.com/" method="post">
-            <div class="mbr-subscribe input-group">
-              <input class="form-control form-control-lg" type="text" name="nome" data-form-field="Email" required="" placeholder="Nome" id="email-form3-1a"> <span class="input-group-btn"></span> </div>
+          <form class="" method="post" action="page3.php">
+            <div class="form-group"> <label>Nome</label>
+              <input type="text" name="nome" class="form-control" placeholder="Nome"> </div>
+            <div class="form-group"> <label>RG</label>
+              <input type="text" name="rg" class="form-control" placeholder="RG"> </div>
+            <div class="form-group"> <label>CPF</label>
+              <input type="text" name="cpf" class="form-control" placeholder="CPF"> </div>
+            <div class="form-group"> <label>Endereço</label>
+              <input type="text" name="endereco" class="form-control" placeholder="Endereço"> </div>
+            <div class="form-group"> <label>CEP</label>
+              <input type="text" name="cep" class="form-control" placeholder="CEP"> <label>Prioridade</label>
+              <div class="mbr-subscribe input-group input-group-lg bg-light text-info my-3">
+                <div class="btn-group">
+                  <button class="btn dropdown-toggle btn-link text-dark" data-toggle="dropdown"> Selecione</button>
+                </div>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item text-dark" href="#">Vendedor</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Gerente</a>
+                </div> <span class="input-group-btn"></span> </div>
+            </div>
+            <button type="submit" class="btn btn-primary text-center text-uppercase px-5 mx-5">Cadastrar</button>
           </form>
         </div>
       </div>
@@ -91,32 +106,12 @@
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
       </div>
-      <div class="row py-2 justify-content-center">
-        <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
-          <div data-form-alert="" hidden=""> Thanks for filling out the form! </div>
-          <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
-            <input type="hidden" data-form-email="true" value="wFeacoKYEKO3821VwpeBEXR6T3KqZV4kqQm6n2Sz8y6MbCO3WX4pQf0weiZ6/sFtBI1DXzZE65MTaw0SQuzLbqMubdH+GUdHJKK/jopP59sT5Ro/B9gqk87Sh5cpDMdW">
-            <div class="mbr-subscribe input-group">
-              <input class="form-control" type="number" name="email" placeholder="RG" data-form-field="Email" required="" id="email-form3-1d"> <span class="input-group-btn"></span> </div>
-          </form>
-        </div>
-      </div>
     </div>
   </section>
   <section class="mbr-section form3 cid-qzsdDH5jWA" id="form3-1e" data-rv-view="180">
     <div class="container">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
-      </div>
-      <div class="row py-2 justify-content-center">
-        <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
-          <div data-form-alert="" hidden=""> Thanks for filling out the form! </div>
-          <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
-            <input type="hidden" data-form-email="true" value="fz5vyyltCg95m+a9cCidX/BVZI1rwbfIu1jtIRgCEGYv8zTzRJJbTXdTipHzhwVZxNHyLizcx98RC2UqtZKafikAjUvFMPxIguuHcnv4Bfzz5EBHZAoOzpL9bMa9pR0d">
-            <div class="mbr-subscribe input-group">
-              <input class="form-control" type="number" name="CPF" placeholder="CPF" data-form-field="Email" required="" id="email-form3-1e"> <span class="input-group-btn"></span> </div>
-          </form>
-        </div>
       </div>
     </div>
   </section>
@@ -125,32 +120,12 @@
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
       </div>
-      <div class="row py-2 justify-content-center">
-        <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
-          <div data-form-alert="" hidden=""> Thanks for filling out the form! </div>
-          <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
-            <input type="hidden" data-form-email="true" value="KJA5hYGAtFbKOXe8a8yHLvSehuFtjHZbl36UxvGymPBq3Se9ips3ToqXU4zrxfTRzCDCT0BCwpqM2wBPrMBp233u/mn32GVpuMUCj0nvnnhVlfEn9+VHW/BLNmb9oJTh">
-            <div class="mbr-subscribe input-group">
-              <input class="form-control" type="text" name="endereço" placeholder="Endereço" data-form-field="Email" required="" id="email-form3-1f"> <span class="input-group-btn"></span> </div>
-          </form>
-        </div>
-      </div>
     </div>
   </section>
   <section class="mbr-section form3 cid-qzsdE6eNmL" id="form3-1g" data-rv-view="186">
     <div class="container">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
-      </div>
-      <div class="row py-2 justify-content-center">
-        <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
-          <div data-form-alert="" hidden=""> Thanks for filling out the form! </div>
-          <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
-            <input type="hidden" data-form-email="true" value="UTy3Qjm/uFpUlS9Sg03iLL+QkKWhm5Qr45t8iErcw2oE7f4bAUEdGZ7edtcdAXywG8i8z8NJfCB1b928baikoNQ1DgLztmQKQ8HKb3LSv5qqSl5qDHcXS92l+rXoJHmm">
-            <div class="mbr-subscribe input-group">
-              <input class="form-control" type="number" name="cep" placeholder="CEP" data-form-field="Email" required="" id="email-form3-1g"> <span class="input-group-btn"></span> </div>
-          </form>
-        </div>
       </div>
     </div>
   </section>
@@ -164,26 +139,13 @@
           <div data-form-alert="" hidden=""> Thanks for filling out the form! </div>
           <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
             <input type="hidden" data-form-email="true" value="y14f7J920TKaX8PhSYTuEftF8+hJwZIUGTjb65rQRu0/WeTQDclOPTM9xN2uSFno1ElhxjqJKx0jS/xGqNT7gGInDqvMemDsztAGWUzZrtbjby8J+2UFX6jn89TXDOhm">
-            <div class="mbr-subscribe input-group">
-              <input class="form-control w-25" type="number" name="email" placeholder="Fone" data-form-field="Email" required="" id="email-form3-1h"> <span class="input-group-btn"></span> </div>
+            <div class="mbr-subscribe input-group"> <span class="input-group-btn"></span> </div>
           </form>
         </div>
       </div>
       <div class="row py-2 justify-content-center">
         <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
           <div data-form-alert="" hidden=""> Thanks for filling out the form! </div>
-          <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
-            <input type="hidden" data-form-email="true" value="y14f7J920TKaX8PhSYTuEftF8+hJwZIUGTjb65rQRu0/WeTQDclOPTM9xN2uSFno1ElhxjqJKx0jS/xGqNT7gGInDqvMemDsztAGWUzZrtbjby8J+2UFX6jn89TXDOhm">
-            <div class="mbr-subscribe input-group input-group-lg bg-light text-info">
-              <div class="btn-group">
-                <button class="btn dropdown-toggle btn-link text-dark" data-toggle="dropdown"> Selecione</button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item text-dark" href="#">Vendedor</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Gerente</a>
-                </div>
-              </div> <span class="input-group-btn"></span> </div>
-          </form>
         </div>
       </div>
     </div>
@@ -193,9 +155,7 @@
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-          <form class="" method="post" action="https://formspree.io/">
-            <button type="submit" name="inserir" class="btn btn-primary text-center">CADASTRAR</button>
-          </form>
+          <form class="" method="post" action="https://formspree.io/"></form>
         </div>
         <div class="col-md-4"></div>
       </div>

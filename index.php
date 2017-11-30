@@ -62,25 +62,25 @@
           <div class="icons-media-container mbr-white">
             <div class="card col-12 col-md-6 col-lg-3">
               <div class="icon-block">
-                <a href="page3.html"> <span class="mbr-iconfont mbri-users" media-simple="true"></span> </a>
+                <a href="page3.php"> <span class="mbr-iconfont mbri-users" media-simple="true"></span> </a>
               </div>
               <h5 class="mbr-fonts-style display-5">Cadastrar Usuários</h5>
             </div>
             <div class="card col-12 col-md-6 col-lg-3">
               <div class="icon-block">
-                <a href="page2.html"><span class="mbr-iconfont mbrib-home" media-simple="true"></span></a>
+                <a href="page2.php"><span class="mbr-iconfont mbrib-home" media-simple="true"></span></a>
               </div>
               <h5 class="mbr-fonts-style display-5"> Cadastrar &nbsp;Imóveis</h5>
             </div>
             <div class="card col-12 col-md-6 col-lg-3">
               <div class="icon-block">
-                <a href="page4.html"> <span class="mbr-iconfont mbri-cash" media-simple="true"></span> </a>
+                <a href="page4.php"> <span class="mbr-iconfont mbri-cash" media-simple="true"></span> </a>
               </div>
               <h5 class="mbr-fonts-style display-5"> Vendas e Comissões</h5>
             </div>
             <div class="card col-12 col-md-6 col-lg-3">
               <div class="icon-block">
-                <a href="page5.html"> <span class="mbr-iconfont mbri-search" media-simple="true"></span> </a>
+                <a href="page5.php"> <span class="mbr-iconfont mbri-search" media-simple="true"></span> </a>
               </div>
               <h5 class="mbr-fonts-style display-5">Consultas</h5>
             </div>
