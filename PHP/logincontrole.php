@@ -17,14 +17,56 @@ try {
     // set the PDO error mode to exception0
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "<script>alert('Conectado com sucesso');</script>"; 
+
+    // SELECT nome, senha FROM login WHERE nome='admin' and senha='admin' 
+    $stmt = $conn->prepare("SELECT nome, senha FROM login WHERE nome = '".$usuario."' AND senha = '". $senha."';"); 
+    $stmt->execute();
+    echo "linhas: ".$stmt->rowCount();
+
+  
+
+    echo "<script>alert('LOGADO');</script>";
+
+    if ($stmt->rowCount()==1){
+    if (!isset($_COOKIE["acessos"])){
+
+        setcookie("acessos",1);
+    }
+        else{
+
+            setcookie("acessos", $_COOKIE["acessos"]+1);
+
+
+           
+
+            echo "<script>alert('LOGADO');</script>";
+            echo "Acessos".$_COOKIE["acessos"];
+
+            header("Location: ../index.php"); exit;
+
+    
+//         // Salva os dados encontrados na sessão
+   
+
+ 
+
+//         // Redireciona o visitante
+   
+  }
+
+    }
+else{
+
+    header("Location: ../login.php"); exit;
+}
+
     }
 catch(PDOException $e)
     {
     echo "Connection failed: " . $e->getMessage();
     }
 
-    $stmt = $conn->prepare("SELECT nome, senha FROM login WHERE 'nome' = '".$usuario."' AND 'senha' = '". $senha."' LIMIT 1"); 
-    $stmt->execute();
+    
 
     
     
@@ -40,11 +82,11 @@ catch(PDOException $e)
 //     $query = mysql_query($sql);
 //$result = $stmt->setFetchMode(PDO::FETCH_ASSOC); 
 
-  echo "linhas: ".$stmt->rowCount();
+  
 
  // if ($stmt->rowCount() !=1) {
 //         // Mensagem de erro quando os dados são inválidos e/ou o usuário não foi encontrado
-echo "<script>alert('LOGIN INVÁLIDO');</script>";
+
     // header("Location: ../login.php"); exit;
    // } else {
     
@@ -58,17 +100,7 @@ echo "<script>alert('LOGIN INVÁLIDO');</script>";
      
 //         // Se a sessão não existir, inicia uma
 
-echo "<script>alert('LOGADO');</script>";
-         if (isset($sessao)){ session_start();
-     
-//         // Salva os dados encontrados na sessão
-        
-       $_SESSION['UsuarioNome'] = $resultado['nome'];
-      
-     
-//         // Redireciona o visitante
-        header("Location: ../index.php"); exit;
-       }
+
      }
     
     

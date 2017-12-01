@@ -72,7 +72,7 @@
         <div class="col-md-4"></div>
       </div> <span class="input-group-btn text-center"></span> </div>
   </section>
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <!-- <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -80,7 +80,7 @@
   <script src="assets/dropdown/js/script.min.js"></script>
   <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script> -->
 </body>
 
 </html>
