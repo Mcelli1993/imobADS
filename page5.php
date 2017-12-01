@@ -90,23 +90,18 @@
             <input type="hidden" data-form-email="true" value="AcjDyygK6QxFyLdoAQ/lYEwfPacwnUzbz9yEv+et9RpeIBEdEe2tRJcNV5sfBw26uJAOHTCuBuQBvvfUgEjutKoRsjnUvoeI6L7HVTKtaKHWI3q8J61LswEx8oYT4NFQ">
             <div class="mbr-subscribe input-group">
               <input class="form-control" type="text" name="buscar" placeholder="Digite sua busca" data-form-field="Email" required="" id="email-form3-1t"> <span class="input-group-btn"></span> </div>
-          
+          </form>
         </div>
         <div class="col-md-3">
-         
-            <button type="submit" class="btn btn-primary">BUSCAR</button>
-          
+          <button type="submit" class="btn btn-primary">BUSCAR</button>
         </div>
         <div class="col-md-3">
-          <div class="btn-group">
-            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> SELECIONE</button>
-            <div class="dropdown-menu">
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Usuário</a>
-              <a class="dropdown-item" href="#">Imóveis</a>
-              <a class="dropdown-item" href="#">Vendas</a>
-            </div>
-          </div>
+          <div class="form-group"> <select class="form-control" id="sel1">
+    <option>Usuários</option>
+    <option>Imóveis</option>
+    <option>Vendas</option>
+   
+  </select> </div>
         </div>
       </div>
     </div>
@@ -117,8 +112,7 @@
         <div class="container">
           <div class="row search">
             <div class="col-md-12">
-              <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label>
-                <input class="form-control input-sm" disabled=""> </div>
+              <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label> </div>
             </div>
           </div>
         </div>
@@ -126,57 +120,131 @@
           <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-                <th class="head-item mbr-fonts-style display-7"> Vendedor</th>
-                <th class="head-item mbr-fonts-style display-7"> Usuário</th>
-                <th class="head-item mbr-fonts-style display-7">Imóvel</th>
-                <th class="head-item mbr-fonts-style display-7 bg-secondary">Preço</th>
+                <th class="head-item mbr-fonts-style display-7"> Nome</th>
+                <th class="head-item mbr-fonts-style display-7"> RG</th>
+                <th class="head-item mbr-fonts-style display-7">CPF</th>
+                <th class="head-item mbr-fonts-style display-7 bg-secondary">Endereço</th>
+                <th>CEP</th>
+                <th>Fone</th>
+                <th>Prioridade</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
-                <td class="body-item mbr-fonts-style display-7">44</td>
-                <td class="body-item mbr-fonts-style display-7">2016-10-17</td>
-                <td class="body-item mbr-fonts-style display-7">$317.000 </td>
-                <td>
-                  <button type="submit" name="alterar" class="btn btn-primary text-center">ALTERAR</button>
-                </td>
-                <td>
-                  <button type="submit" class="btn btn-primary" name="excluir">EXCLUIR</button>
-                </td>
+                <td class="body-item mbr-fonts-style display-7">1111111</td>
+                <td class="body-item mbr-fonts-style display-7">02678823</td>
+                <td class="body-item mbr-fonts-style display-7">Costa gama</td>
+                <td>95520000</td>
+                <td>95520000 </td>
+                <td>1</td>
+                <button type="submit" name="alterar" class="btn btn-primary text-center">ALTERAR</button>
+                <button type="submit" name="excluir" class="btn btn-primary">EXCLUIR</button>
               </tr>
-              <tr>
-                <td class="body-item mbr-fonts-style display-7">Caren Rials</td>
-                <td class="body-item mbr-fonts-style display-7">35</td>
-                <td class="body-item mbr-fonts-style display-7">2013-04-12</td>
-                <td class="body-item mbr-fonts-style display-7">$445.500 </td>
-                <td>
-                  <button type="submit" class="btn btn-primary text-center" name="alterar">ALTERAR</button>
-                </td>
-                <td>
-                  <button type="submit" class="btn btn-primary" name="excluir">EXCLUIR</button>
-                </td>
-              </tr>
+              <tr></tr>
               <tr></tr>
               <tr></tr>
             </tbody>
           </table>
-          </form>
         </div>
         <div class="container table-info-container">
           <div class="row info">
             <div class="col-md-6">
               <div class="dataTables_info mbr-fonts-style display-7"> <span class="inactive infoRows"></span> <span class="inactive infoRows"></span> </div>
             </div>
-            <div class="col-md-6"></div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-8 offset-md-2"></div>
-      </div>
     </div>
   </section>
+  <div class="container container-table">
+    <div class="table-wrapper">
+      <div class="container">
+        <div class="row search">
+          <div class="col-md-12">
+            <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label> </div>
+          </div>
+        </div>
+      </div>
+      <div class="container scroll">
+        <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
+          <thead>
+            <tr class="table-heads ">
+              <th class="head-item mbr-fonts-style display-7"> Endereço&nbsp;</th>
+              <th class="head-item mbr-fonts-style display-7"> Descrição</th>
+              <th class="head-item mbr-fonts-style display-7">Proprietário</th>
+              <th class="head-item mbr-fonts-style display-7 bg-secondary">CEP</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
+              <td class="body-item mbr-fonts-style display-7">Casa</td>
+              <td class="body-item mbr-fonts-style display-7">2016-10-17</td>
+              <td class="body-item mbr-fonts-style display-7">$317.000 </td>
+              <td>100000</td>
+              <button type="submit" class="btn btn-primary text-center" name="alterar">ALTERAR</button>
+              <button type="submit" class="btn btn-primary" name="excluir">EXCLUIR</button>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container table-info-container">
+        <div class="row info">
+          <div class="col-md-6">
+            <div class="dataTables_info mbr-fonts-style display-7"> <span class="inactive infoRows"></span> <span class="inactive infoRows"></span> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container container-table">
+    <div class="table-wrapper">
+      <div class="container">
+        <div class="row search">
+          <div class="col-md-12">
+            <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label> </div>
+          </div>
+        </div>
+      </div>
+      <div class="container scroll">
+        <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
+          <thead>
+            <tr class="table-heads ">
+              <th class="head-item mbr-fonts-style display-7"> Vendedor</th>
+              <th class="head-item mbr-fonts-style display-7"> Vendas</th>
+              <th class="head-item mbr-fonts-style display-7">Comissões</th>
+              <th class="head-item mbr-fonts-style display-7 bg-secondary">Salário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
+              <td class="body-item mbr-fonts-style display-7">44</td>
+              <td class="body-item mbr-fonts-style display-7">10000</td>
+              <td class="body-item mbr-fonts-style display-7">$317.000 </td>
+              <button type="submit" name="alterar" class="btn btn-primary text-center">ALTERAR</button>
+              <button type="submit" class="btn btn-primary" name="excluir">EXCLUIR</button>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container table-info-container">
+        <div class="row info">
+          <div class="col-md-6">
+            <div class="dataTables_info mbr-fonts-style display-7"> <span class="inactive infoRows"></span> <span class="inactive infoRows"></span> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
