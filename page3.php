@@ -1,3 +1,6 @@
+<?php 
+include 'PHP/conexion.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -76,27 +79,44 @@
             <br> </h3>
           <form class="" method="post" action="page3.php">
             <div class="form-group"> <label>Nome</label>
-              <input type="text" name="nome" class="form-control" placeholder="Nome"> </div>
+              <input type="text" name="nomeUser" class="form-control" placeholder="Nome"> </div>
             <div class="form-group"> <label>RG</label>
-              <input type="text" name="rg" class="form-control" placeholder="RG"> </div>
+              <input type="text" name="rgUser" class="form-control" placeholder="RG"> </div>
             <div class="form-group"> <label>CPF</label>
-              <input type="text" name="cpf" class="form-control" placeholder="CPF"> </div>
+              <input type="text" name="cpfUser" class="form-control" placeholder="CPF"> </div>
             <div class="form-group"> <label>Endereço</label>
-              <input type="text" name="endereco" class="form-control" placeholder="Endereço"> </div>
+              <input type="text" name="enderecoUser" class="form-control" placeholder="Endereço"> </div>
             <div class="form-group"> <label>CEP</label>
-              <input type="text" name="cep" class="form-control" placeholder="CEP"> <label>Prioridade</label>
+              <input type="text" name="cepUser" class="form-control" placeholder="CEP"> <label>Prioridade</label>
               <div class="mbr-subscribe input-group input-group-lg bg-light text-info my-3">
                 <div class="btn-group">
                   <button class="btn dropdown-toggle btn-link text-dark" data-toggle="dropdown"> Selecione</button>
                 </div>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item text-dark" href="#">Vendedor</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Gerente</a>
-                </div> <span class="input-group-btn"></span> </div>
+                <div class="form-group"> <select name="tipoUser" class="form-control" >
+    				<option value="vendedor">Vendedor</option>
+    				<option value="gerente">Gerente</option>
             </div>
-            <button type="submit" class="btn btn-primary text-center text-uppercase px-5 mx-5">Cadastrar</button>
+            <button type="submit" class="btn btn-primary text-center text-uppercase px-5 mx-5" name="inserir">Cadastrar</button>
           </form>
+          
+          <?php
+		if(isset($_POST['inserir'])){
+			$nomeUsuario = $_POST['nomeUser'];
+			$rgUsuario = $_POST['rgUser'];
+			$cpfUsuario = $_POST['cpfUser'];
+			$enderecoUsuario = $_POST['enderecoUser'];
+			$cepUsuario = $_POST['cepUser'];
+			$tipoUsuario = $_POST['tipoUser'];
+			
+			$inserir = "INSERT into funcionarios (nome,rg,cpf,endereco,cep,cargo) VALUES ('$nomeUsuario','$rgUsuario','$cpfUsuario','$enderecoUsuario','$cepUsuario','$tipoUsuario')";
+			$executar = mysqli_query($conexao, $inserir);
+			
+			if ($executar){
+        echo "<h3>Dados inseridos com sucesso!</h3>"; 
+      } 
+      else { echo "<h3>Não foi possivel  inserir</h3>";}
+    } ?>
+          
         </div>
       </div>
     </div>
@@ -209,7 +229,7 @@
       </div>
     </div>
   </section>
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <!--  <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -217,7 +237,7 @@
   <script src="assets/dropdown/js/script.min.js"></script>
   <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script> -->
 </body>
 
 </html>
