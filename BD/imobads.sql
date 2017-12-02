@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 01-Dez-2017 às 22:40
+-- Generation Time: 02-Dez-2017 às 00:06
 -- Versão do servidor: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -36,19 +36,6 @@ CREATE TABLE IF NOT EXISTS `alugueis` (
   `prazo` varchar(50) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `cliente_id` (`cliente_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `cargos`
---
-
-DROP TABLE IF EXISTS `cargos`;
-CREATE TABLE IF NOT EXISTS `cargos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `cargo` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -93,14 +80,13 @@ CREATE TABLE IF NOT EXISTS `comissoes` (
 DROP TABLE IF EXISTS `funcionarios`;
 CREATE TABLE IF NOT EXISTS `funcionarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `cargo_id` int(11) NOT NULL,
-  `nome` varchar(50) NOT NULL,
-  `telefone` bigint(20) NOT NULL,
-  `rg` bigint(20) NOT NULL,
-  `endereco` varchar(50) NOT NULL,
-  `cep` bigint(20) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `id_cargo` (`cargo_id`)
+  `nome` varchar(50) NOT NULL DEFAULT '0',
+  `rg` bigint(20) NOT NULL DEFAULT '0',
+  `cpf` bigint(20) NOT NULL DEFAULT '0',
+  `endereco` varchar(50) NOT NULL DEFAULT '0',
+  `cep` bigint(20) NOT NULL DEFAULT '0',
+  `cargo` varchar(50) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -181,12 +167,6 @@ ALTER TABLE `alugueis`
 --
 ALTER TABLE `comissoes`
   ADD CONSTRAINT `FK_funcionario` FOREIGN KEY (`funcionario_id`) REFERENCES `funcionarios` (`id`);
-
---
--- Limitadores para a tabela `funcionarios`
---
-ALTER TABLE `funcionarios`
-  ADD CONSTRAINT `FK_cargo` FOREIGN KEY (`cargo_id`) REFERENCES `cargos` (`id`);
 
 --
 -- Limitadores para a tabela `salarios`
