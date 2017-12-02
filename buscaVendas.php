@@ -72,7 +72,7 @@
     <div class="container">
       <div class="media-container-row">
         <div class="title col-12 col-md-8">
-          <h2 class="align-center pb-3 mbr-fonts-style display-2">Selecione uma Tabela para Consultar</h2>
+          <h2 class="align-center pb-3 mbr-fonts-style display-2">Consulta, Alteração e exclusão</h2>
           <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5"></h3>
         </div>
       </div>
@@ -88,14 +88,8 @@
           <div data-form-alert="" hidden="">Thanks for filling out the form!</div>
           <form class="mbr-form" action="page5.php" method="post" data-form-title="Mobirise Form">
             <input type="hidden" data-form-email="true" value="AcjDyygK6QxFyLdoAQ/lYEwfPacwnUzbz9yEv+et9RpeIBEdEe2tRJcNV5sfBw26uJAOHTCuBuQBvvfUgEjutKoRsjnUvoeI6L7HVTKtaKHWI3q8J61LswEx8oYT4NFQ">
-            <div class="mbr-subscribe input-group"> <span class="input-group-btn"></span> </div>
-          </form>
-        </div>
-        <div class="col-12 col-lg-6  col-md-3 " data-form-type="formoid">
-          <div data-form-alert="" hidden="">Thanks for filling out the form!</div>
-          <form class="mbr-form" action="page5.php" method="post" data-form-title="Mobirise Form">
-            <input type="hidden" data-form-email="true" value="AcjDyygK6QxFyLdoAQ/lYEwfPacwnUzbz9yEv+et9RpeIBEdEe2tRJcNV5sfBw26uJAOHTCuBuQBvvfUgEjutKoRsjnUvoeI6L7HVTKtaKHWI3q8J61LswEx8oYT4NFQ">
-            <div class="mbr-subscribe input-group"> <span class="input-group-btn"></span> </div>
+            <div class="mbr-subscribe input-group">
+              <input class="form-control" type="text" name="buscar" placeholder="Digite sua busca" data-form-field="Email" required="" id="email-form3-1t"> <span class="input-group-btn"></span> </div>
           </form>
         </div>
         <div class="col-md-3">
@@ -113,7 +107,69 @@
     </div>
   </section>
   <section class="section-table cid-qzXuz5YFR6" id="table1-1w" data-rv-view="2089">
-    <div class="container container-table"></div>
+    <div class="container container-table">
+      <div class="table-wrapper">
+        <div class="container">
+          <div class="row search">
+            <div class="col-md-12">
+              <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label> </div>
+            </div>
+          </div>
+        </div>
+        <div class="container scroll">
+          <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+                <th class="head-item mbr-fonts-style display-7"> Nome</th>
+                <th class="head-item mbr-fonts-style display-7"> RG</th>
+                <th class="head-item mbr-fonts-style display-7">CPF</th>
+                <th class="head-item mbr-fonts-style display-7 bg-secondary">Endereço</th>
+                <th>CEP</th>
+                <th>Fone</th>
+                <th>Prioridade</th>
+                <th>Ação</th>
+                <th>Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
+                <td class="body-item mbr-fonts-style display-7">1111111</td>
+                <td class="body-item mbr-fonts-style display-7">02678823</td>
+                <td class="body-item mbr-fonts-style display-7">Costa gama</td>
+                <td>95520000</td>
+                <td>95520000 </td>
+                <td>1</td>
+                <td>
+                  <ul class="nav nav-pills flex-column text-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">ALTERAR</a>
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul class="nav nav-pills flex-column text-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">EXCLUIR</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr></tr>
+              <tr></tr>
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          <div class="row info">
+            <div class="col-md-6">
+              <div class="dataTables_info mbr-fonts-style display-7"> <span class="inactive infoRows"></span> <span class="inactive infoRows"></span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <div class="container container-table">
     <div class="table-wrapper">
@@ -123,6 +179,39 @@
             <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label> </div>
           </div>
         </div>
+      </div>
+      <div class="container scroll">
+        <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
+          <thead>
+            <tr class="table-heads ">
+              <th class="head-item mbr-fonts-style display-7"> Endereço&nbsp;</th>
+              <th class="head-item mbr-fonts-style display-7"> Descrição</th>
+              <th class="head-item mbr-fonts-style display-7">Proprietário</th>
+              <th class="head-item mbr-fonts-style display-7 bg-secondary">CEP</th>
+              <th>Preço</th>
+              <th>Ação</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
+              <td class="body-item mbr-fonts-style display-7">Casa</td>
+              <td class="body-item mbr-fonts-style display-7">2016-10-17</td>
+              <td class="body-item mbr-fonts-style display-7">$317.000 </td>
+              <td>100000</td>
+              <td>
+                <a class="nav-link text-center" href="#">ALTERAR</a>
+              </td>
+              <td>
+                <a class="nav-link text-center" href="#">EXCLUIR</a>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+          </tbody>
+        </table>
       </div>
       <div class="container table-info-container">
         <div class="row info">
@@ -141,6 +230,37 @@
             <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label> </div>
           </div>
         </div>
+      </div>
+      <div class="container scroll">
+        <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
+          <thead>
+            <tr class="table-heads ">
+              <th class="head-item mbr-fonts-style display-7"> Vendedor</th>
+              <th class="head-item mbr-fonts-style display-7"> Vendas</th>
+              <th class="head-item mbr-fonts-style display-7">Comissões</th>
+              <th class="head-item mbr-fonts-style display-7 bg-secondary">Salário</th>
+              <th>Ação</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
+              <td class="body-item mbr-fonts-style display-7">44</td>
+              <td class="body-item mbr-fonts-style display-7">10000</td>
+              <td class="body-item mbr-fonts-style display-7">$317.000 </td>
+              <td contenteditable="true" class="text-center">
+                <a class="nav-link" href="#">ALTERAR</a>
+              </td>
+              <td>
+                <a class="nav-link text-center" href="#">EXCLUIR</a>
+              </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+          </tbody>
+        </table>
       </div>
       <div class="container table-info-container">
         <div class="row info">
