@@ -87,14 +87,19 @@ include 'PHP/conexion.php';
             <div class="form-group"> <label>Endereço</label>
               <input type="text" name="enderecoUser" class="form-control" placeholder="Endereço"> </div>
             <div class="form-group"> <label>CEP</label>
-              <input type="text" name="cepUser" class="form-control" placeholder="CEP"> <label>Prioridade</label>
-              <div class="mbr-subscribe input-group input-group-lg bg-light text-info my-3">
+              <input type="text" name="cepUser" class="form-control" placeholder="CEP"> 
+              
+              <div class="form-group"> <label>Prioridade</label>
+              
                 
-                <div class="form-group"> <select name="tipoUser" class="form-control" >
+                <select name="tipoUser" class="form-control" >
     				<option value="vendedor">Vendedor</option>
     				<option value="gerente">Gerente</option>
+            </select>
             </div>
+            <div class="form-group">
             <button type="submit" class="btn btn-primary text-center text-uppercase px-5 mx-5" name="inserir">Cadastrar</button>
+            </div>
           </form>
           
           <?php
