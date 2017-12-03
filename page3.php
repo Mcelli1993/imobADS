@@ -85,16 +85,14 @@
               <input type="text" name="endereco" class="form-control" placeholder="Endereço"> </div>
             <div class="form-group"> <label>CEP</label>
               <input type="text" name="cep" class="form-control" placeholder="CEP"> <label>Prioridade</label>
-              <div class="mbr-subscribe input-group input-group-lg bg-light text-info my-3">
-                <div class="btn-group">
-                  <button class="btn dropdown-toggle btn-link text-dark" data-toggle="dropdown"> Selecione</button>
-                </div>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item text-dark" href="#">Vendedor</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Gerente</a>
-                </div> <span class="input-group-btn"></span> </div>
+              <div class="mbr-subscribe input-group input-group-lg bg-light text-info my-3"> <span class="input-group-btn"></span> </div>
             </div>
+            <div class="form-group text-center"> <select class="form-control" id="sel1">
+    <option>Gerente</option>
+    <option>Vendedor</option>
+    
+   
+  </select> </div>
             <button type="submit" class="btn btn-primary text-center text-uppercase px-5 mx-5">Cadastrar</button>
           </form>
         </div>
