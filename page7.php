@@ -69,10 +69,10 @@
   </section>
   <section class="mbr-section form3 cid-qzsbNCZ6k9 bg-warning" id="form3-1a" data-rv-view="174">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center bg-warning">
         <div class="title col-12 col-lg-8">
-          <h3 class="mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style display-2 bg-warning text-dark">&nbsp; Formulário de Cadastro
-            <br>de &nbsp;Usuários
+          <h3 class="mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style display-2 text-center text-dark">&nbsp; Formulário de Cadastro
+            <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;de &nbsp;Clientes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
             <br> </h3>
           <form class="" method="post" action="page3.php">
             <div class="form-group"> <label>Nome</label>
@@ -84,19 +84,25 @@
             <div class="form-group"> <label>Endereço</label>
               <input type="text" name="endereco" class="form-control" placeholder="Endereço"> </div>
             <div class="form-group"> <label>CEP</label>
-              <input type="text" name="cep" class="form-control" placeholder="CEP"> <label>Prioridade</label>
+              <input type="text" name="cep" class="form-control" placeholder="CEP">
               <div class="mbr-subscribe input-group input-group-lg bg-light text-info my-3">
-                <div class="btn-group">
-                  <button class="btn dropdown-toggle btn-link text-dark" data-toggle="dropdown"> Selecione</button>
-                </div>
                 <div class="dropdown-menu">
                   <a class="dropdown-item text-dark" href="#">Vendedor</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Gerente</a>
                 </div> <span class="input-group-btn"></span> </div>
             </div>
-            <button type="submit" class="btn btn-primary text-center text-uppercase px-5 mx-5">Cadastrar</button>
           </form>
+          <div class="form-group"> <label>Telefone</label>
+            <input type="text" name="cep" class="form-control" placeholder="Telefone">
+            <div class="mbr-subscribe input-group input-group-lg bg-light text-info my-3">
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-dark" href="#">Vendedor</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Gerente</a>
+              </div> <span class="input-group-btn"></span> </div>
+          </div>
+          <button type="submit" class="btn btn-primary text-center text-uppercase px-5 mx-5">Cadastrar</button>
         </div>
       </div>
     </div>
@@ -115,27 +121,6 @@
       </div>
     </div>
   </section>
-  <section class="mbr-section form3 cid-qzsdDUmCg1" id="form3-1f" data-rv-view="183">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="title col-12 col-lg-8"> </div>
-      </div>
-    </div>
-  </section>
-  <section class="mbr-section form3 cid-qzsdE6eNmL" id="form3-1g" data-rv-view="186">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="title col-12 col-lg-8"> </div>
-      </div>
-    </div>
-  </section>
-  <section class="mbr-section form3 cid-qzsdEiQLCp bg-warning" id="form3-1h" data-rv-view="189">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="title col-12 col-lg-8"> </div>
-      </div>
-    </div>
-  </section>
   <div class="py-5 bg-warning">
     <div class="container">
       <div class="row">
@@ -147,28 +132,21 @@
       </div>
     </div>
   </div>
-  <section class="mbr-section form3 cid-qzsdF7h0c0" id="form3-1i" data-rv-view="192">
+  <section class="mbr-section form3 cid-qzsdF7h0c0 bg-warning" id="form3-1i" data-rv-view="192">
     <div class="container">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
+      </div>
+      <div class="row py-2 justify-content-center">
+        <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
+          <div data-form-alert="" hidden=""> Thanks for filling out the form! </div>
+          <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
+            <input type="hidden" data-form-email="true" value="mnVmXZX9YZwsKTjD4Gip5HDYK29dF09JqcVXVoJ16f5oEAnp77gXqHw7bpFF98mL43AsoYEMmijtAfcwAzUemz14cI7kO27wxCf/vKumAfu/aSOp1EriZxYzsH6bTubz"> </form>
+        </div>
       </div>
     </div>
   </section>
   <section class="mbr-section form3 cid-qzsdFhO0zu" id="form3-1j" data-rv-view="195"></section>
-  <section class="mbr-section form3 cid-qzsdFvg4AU" id="form3-1k" data-rv-view="198">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="title col-12 col-lg-8"> </div>
-      </div>
-    </div>
-  </section>
-  <section class="mbr-section form3 cid-qzsdFJXMCu" id="form3-1l" data-rv-view="201">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="title col-12 col-lg-8"> </div>
-      </div>
-    </div>
-  </section>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>

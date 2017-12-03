@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css"> </head>
 
 <body>
-  <section class="menu cid-qxXgS3JcCF" once="menu" id="menu1-e" data-rv-view="726">
+  <section class="menu cid-qxXgS3JcCF" once="menu" id="menu1-e" data-rv-view="284">
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <div class="hamburger"> <span></span> <span></span> <span></span> <span></span> </div>
@@ -32,7 +32,7 @@
                     
                          <img src="assets/images/logo-casa-340x309.png" alt="Mobirise" title="" media-simple="true" style="height: 3.8rem;">
                     
-                </span> <span class="navbar-caption-wrap"><a class="navbar-caption text-success display-5" href="index.phpl#header12-m">imobADS</a></span> </div>
+                </span> <span class="navbar-caption-wrap"><a class="navbar-caption text-success display-5" href="index.php#header12-m">imobADS</a></span> </div>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
@@ -50,9 +50,9 @@
     </nav>
   </section>
   <section class="engine">
-    <a href="https://mobirise.co/a">web page builder</a>
+    <a href="https://mobirise.co/i">build a website</a>
   </section>
-  <section class="header12 cid-qzjxeR6trB mbr-fullscreen h-25" id="header12-m" data-rv-view="728">
+  <section class="header12 cid-qzjxeR6trB mbr-fullscreen" id="header12-m" data-rv-view="286">
     <div class="container  ">
       <div class="media-container">
         <div class="col-md-12 align-center">
@@ -84,26 +84,12 @@
               </div>
               <h5 class="mbr-fonts-style display-5">Consultas</h5>
             </div>
-            <div class="icons-media-container mbr-white">
-              <div class="card col-12 col-md-6">
-                <div class="icon-block">
-                  <a href="page6.php"> <span class="mbr-iconfont mbri-edit" media-simple="true"></span> </a>
-                </div>
-                <h5 class="mbr-fonts-style display-5">Cadastrar Aluguéis</h5>
-              </div>
-              <div class="card col-12 col-md-6">
-                <div class="icon-block">
-                  <a href="page7.php"> <span class="mbr-iconfont mbri-user" media-simple="true"></span> </a>
-                </div>
-                <h5 class="mbr-fonts-style display-5"> Cadastrar Clientes</h5>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="cid-qxXgS4CKI3 mbr-fullscreen mbr-parallax-background" id="header2-f" data-rv-view="734">
+  <section class="cid-qxXgS4CKI3 mbr-fullscreen mbr-parallax-background" id="header2-f" data-rv-view="289">
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(178, 204, 210);"></div>
     <div class="container align-center">
       <div class="row justify-content-md-center">
@@ -114,7 +100,7 @@
       </div>
     </div>
   </section>
-  <section class="cid-qxXgS5e9o1" id="footer1-g" data-rv-view="737">
+  <section class="cid-qxXgS5e9o1" id="footer1-g" data-rv-view="292">
     <div class="container">
       <div class="media-container-row content text-white">
         <div class="col-12 col-md-3">

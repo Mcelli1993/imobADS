@@ -72,7 +72,7 @@
     <div class="container">
       <div class="media-container-row">
         <div class="title col-12 col-md-8">
-          <h2 class="align-center pb-3 mbr-fonts-style display-2">Buscar Imóveis</h2>
+          <h2 class="align-center pb-3 mbr-fonts-style display-2">Buscar Aluguéis</h2>
           <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5"></h3>
         </div>
       </div>
@@ -112,10 +112,10 @@
           <thead>
             <tr class="table-heads ">
               <th class="head-item mbr-fonts-style display-7"> Endereço&nbsp;</th>
-              <th class="head-item mbr-fonts-style display-7"> Descrição</th>
-              <th class="head-item mbr-fonts-style display-7">Proprietário</th>
-              <th class="head-item mbr-fonts-style display-7 bg-secondary">CEP</th>
-              <th>Preço</th>
+              <th class="head-item mbr-fonts-style display-7"> Locatário</th>
+              <th class="head-item mbr-fonts-style display-7">Vendedor</th>
+              <th class="head-item mbr-fonts-style display-7 bg-secondary">Peródo</th>
+              <th>Valor</th>
               <th>Ação</th>
               <th>Ação</th>
             </tr>

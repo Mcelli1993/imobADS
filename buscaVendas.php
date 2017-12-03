@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css"> </head>
 
-<body>
+<body class="bg-warning">
   <section class="menu cid-qxXgS3JcCF" once="menu" id="menu1-1o" data-rv-view="2079">
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
   <section class="engine">
     <a href="https://mobirise.co/a">free site builder</a>
   </section>
-  <section class="mbr-section form3 cid-qzXszmSuWb" id="form3-1p" data-rv-view="2081">
+  <section class="mbr-section form3 cid-qzXszmSuWb bg-warning" id="form3-1p" data-rv-view="2081">
     <div class="container">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
@@ -68,17 +68,17 @@
       </div>
     </div>
   </section>
-  <section class="mbr-section content4 cid-qzXt5Z88cv" id="content4-1s" data-rv-view="2084">
+  <section class="mbr-section content4 cid-qzXt5Z88cv bg-warning" id="content4-1s" data-rv-view="2084">
     <div class="container">
-      <div class="media-container-row">
+      <div class="media-container-row bg-warning">
         <div class="title col-12 col-md-8">
-          <h2 class="align-center pb-3 mbr-fonts-style display-2">Consulta, Alteração e exclusão</h2>
+          <h2 class="align-center pb-3 mbr-fonts-style display-2">Buscar Vendas</h2>
           <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5"></h3>
         </div>
       </div>
     </div>
   </section>
-  <section class="mbr-section form3 cid-qzXt8tmuzt" id="form3-1t" data-rv-view="2086">
+  <section class="mbr-section form3 cid-qzXt8tmuzt bg-warning" id="form3-1t" data-rv-view="2086">
     <div class="container">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
@@ -93,80 +93,7 @@
           </form>
         </div>
         <div class="col-md-3">
-          <button type="submit" class="btn btn-primary">BUSCAR</button>
-        </div>
-        <div class="col-md-3">
-          <div class="form-group"> <select class="form-control" id="sel1">
-    <option>Usuários</option>
-    <option>Imóveis</option>
-    <option>Vendas</option>
-   
-  </select> </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section-table cid-qzXuz5YFR6" id="table1-1w" data-rv-view="2089">
-    <div class="container container-table">
-      <div class="table-wrapper">
-        <div class="container">
-          <div class="row search">
-            <div class="col-md-12">
-              <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label> </div>
-            </div>
-          </div>
-        </div>
-        <div class="container scroll">
-          <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
-            <thead>
-              <tr class="table-heads ">
-                <th class="head-item mbr-fonts-style display-7"> Nome</th>
-                <th class="head-item mbr-fonts-style display-7"> RG</th>
-                <th class="head-item mbr-fonts-style display-7">CPF</th>
-                <th class="head-item mbr-fonts-style display-7 bg-secondary">Endereço</th>
-                <th>CEP</th>
-                <th>Fone</th>
-                <th>Prioridade</th>
-                <th>Ação</th>
-                <th>Ação</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
-                <td class="body-item mbr-fonts-style display-7">1111111</td>
-                <td class="body-item mbr-fonts-style display-7">02678823</td>
-                <td class="body-item mbr-fonts-style display-7">Costa gama</td>
-                <td>95520000</td>
-                <td>95520000 </td>
-                <td>1</td>
-                <td>
-                  <ul class="nav nav-pills flex-column text-center">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">ALTERAR</a>
-                    </li>
-                  </ul>
-                </td>
-                <td>
-                  <ul class="nav nav-pills flex-column text-center">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">EXCLUIR</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr></tr>
-              <tr></tr>
-              <tr></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="container table-info-container">
-          <div class="row info">
-            <div class="col-md-6">
-              <div class="dataTables_info mbr-fonts-style display-7"> <span class="inactive infoRows"></span> <span class="inactive infoRows"></span> </div>
-            </div>
-          </div>
+          <button type="submit" class="btn btn-primary text-center">BUSCAR</button>
         </div>
       </div>
     </div>
@@ -179,39 +106,6 @@
             <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label> </div>
           </div>
         </div>
-      </div>
-      <div class="container scroll">
-        <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
-          <thead>
-            <tr class="table-heads ">
-              <th class="head-item mbr-fonts-style display-7"> Endereço&nbsp;</th>
-              <th class="head-item mbr-fonts-style display-7"> Descrição</th>
-              <th class="head-item mbr-fonts-style display-7">Proprietário</th>
-              <th class="head-item mbr-fonts-style display-7 bg-secondary">CEP</th>
-              <th>Preço</th>
-              <th>Ação</th>
-              <th>Ação</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
-              <td class="body-item mbr-fonts-style display-7">Casa</td>
-              <td class="body-item mbr-fonts-style display-7">2016-10-17</td>
-              <td class="body-item mbr-fonts-style display-7">$317.000 </td>
-              <td>100000</td>
-              <td>
-                <a class="nav-link text-center" href="#">ALTERAR</a>
-              </td>
-              <td>
-                <a class="nav-link text-center" href="#">EXCLUIR</a>
-              </td>
-            </tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-          </tbody>
-        </table>
       </div>
       <div class="container table-info-container">
         <div class="row info">

@@ -54,7 +54,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8">
-          <h2 class="align-center pb-2 mbr-fonts-style display-2">Formulário de cadastro de Vendas</h2>
+          <h2 class="align-center pb-2 mbr-fonts-style display-2">Formulário de cadastro de Aluguéis</h2>
         </div>
       </div>
       <div class="row py-2 justify-content-center">
@@ -78,15 +78,15 @@
               <form action="page2.php" method="POST">
                 <div class="form-group"> <label>Endereço</label>
                   <input class="form-control" placeholder="Endereço" name="enderecoImovel"> </div>
-                <div class="form-group"> <label>Proprietário</label>
-                  <input class="form-control" placeholder="Proprietário" name="descricaoImovel"> </div>
+                <div class="form-group"> <label>Locatário</label>
+                  <input class="form-control" placeholder="Locatário" name="descricaoImovel"> </div>
                 <div class="form-group"> <label>Vendedor</label> </div>
-                <input class="form-control p-0" placeholder="Vendedor" name="proprietarioImovel">
-                <div class="form-group"> <label>Comissão</label> </div>
-                <input class="form-control" placeholder="Comissão" name="cepImovel">
+                <input class="form-control p-0 my-3" placeholder="Vendedor" name="proprietarioImovel">
+                <div class="form-group"> <label>Período</label> </div>
+                <input class="form-control" placeholder="Período" name="cepImovel">
                 <div class="form-group"> <label>Valor</label> </div>
                 <input class="form-control my-3" placeholder="Valor" name="precoImovel">
-                <button type="submit" class="btn mt-2 btn-outline-dark text-center text-uppercase mx-5 px-5" name="inserir">CADASTRAR</button>
+                <button type="submit" class="btn mt-2 text-center text-uppercase mx-5 px-5 btn-outline-dark" name="inserir">CADASTRAR</button>
               </form>
               <!--?php
 		if(isset($_POST['inserir'])){
@@ -100,8 +100,7 @@
 			$executar = mysqli_query($conexao, $inserir);
 			
 			if ($executar){
-        echo "<h3Dados inseridos com sucesso!"; } else { echo "";} } ?&gt;-->
-            </div>
+        echo "<h3-->Dados inseridos com sucesso!"; } else { echo "";} } ?&gt; </div>
           </div>
         </div>
       </div>

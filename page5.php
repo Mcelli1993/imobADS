@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css"> </head>
 
-<body>
+<body class="bg-warning">
   <section class="menu cid-qxXgS3JcCF" once="menu" id="menu1-1o" data-rv-view="2079">
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
   <section class="engine">
     <a href="https://mobirise.co/a">free site builder</a>
   </section>
-  <section class="mbr-section form3 cid-qzXszmSuWb" id="form3-1p" data-rv-view="2081">
+  <section class="mbr-section form3 cid-qzXszmSuWb bg-warning" id="form3-1p" data-rv-view="2081">
     <div class="container">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
@@ -68,7 +68,7 @@
       </div>
     </div>
   </section>
-  <section class="mbr-section content4 cid-qzXt5Z88cv" id="content4-1s" data-rv-view="2084">
+  <section class="mbr-section content4 cid-qzXt5Z88cv bg-warning" id="content4-1s" data-rv-view="2084">
     <div class="container">
       <div class="media-container-row">
         <div class="title col-12 col-md-8">
@@ -78,7 +78,7 @@
       </div>
     </div>
   </section>
-  <section class="mbr-section form3 cid-qzXt8tmuzt" id="form3-1t" data-rv-view="2086">
+  <section class="mbr-section form3 cid-qzXt8tmuzt bg-warning" id="form3-1t" data-rv-view="2086">
     <div class="container">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
@@ -99,20 +99,22 @@
           </form>
         </div>
         <div class="col-md-3">
-          <button type="submit" class="btn btn-primary">BUSCAR</button>
+          <button type="submit" class="btn btn-primary">CONSULTAR</button>
         </div>
-        <div class="col-md-3">
-          <div class="form-group"> <select class="form-control" id="sel1">
+        <div class="col-md-3 text-center my-1">
+          <div class="form-group text-center"> <select class="form-control" id="sel1">
     <option>Usuários</option>
     <option>Imóveis</option>
     <option>Vendas</option>
+    <option>Aluguéis</option>
+    <option>Clientes</option>
    
   </select> </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="section-table cid-qzXuz5YFR6" id="table1-1w" data-rv-view="2089">
+  <section class="section-table cid-qzXuz5YFR6 bg-warning" id="table1-1w" data-rv-view="2089">
     <div class="container container-table"></div>
   </section>
   <div class="container container-table">
