@@ -1,3 +1,10 @@
+
+<?php
+include("PHP/conexion.php");
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -50,7 +57,7 @@
   <section class="engine">
     <a href="https://mobirise.co/e">website design software</a>
   </section>
-  <section class="mbr-section form3 cid-qzrXT5QJJM bg-warning" id="form3-13" data-rv-view="82">
+  <section class="mbr-section form3 cid-qzrXT5QJJM" id="form3-13" data-rv-view="82">
     <div class="container">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8">
@@ -66,12 +73,12 @@
       </div>
     </div>
   </section>
-  <section class="mbr-section form3 cid-qzrXToKuGz bg-warning" id="form3-14" data-rv-view="85">
+  <section class="mbr-section form3 cid-qzrXToKuGz" id="form3-14" data-rv-view="85">
     <div class="container">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
       </div>
-      <div class="row py-2 justify-content-center bg-warning">
+      <div class="row py-2 justify-content-center">
         <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
           <div class="card">
             <div class="card-body p-5">
@@ -81,14 +88,14 @@
                 <div class="form-group"> <label>Descrição</label>
                   <input class="form-control" placeholder="Descrição" name="descricaoImovel"> </div>
                 <div class="form-group"> <label>Proprietario</label> </div>
-                <input class="form-control p-0 my-3" placeholder="Proprietário" name="proprietarioImovel">
+                <input class="form-control p-0 my-3" placeholder="Proprietário"  name="proprietarioImovel">
                 <div class="form-group"> <label>CEP</label> </div>
                 <input class="form-control" placeholder="CEP" name="cepImovel">
                 <div class="form-group"> <label>Preço</label> </div>
-                <input class="form-control my-3" placeholder="Preço" name="precoImovel">
+                <input class="form-control my-3" placeholder="Preço"  name="precoImovel">
                 <button type="submit" class="btn mt-2 btn-outline-dark text-center text-uppercase mx-5 px-5" name="inserir">CADASTRAR</button>
               </form>
-              <!--?php
+              <?php
 		if(isset($_POST['inserir'])){
 			$enderecoImovel = $_POST['enderecoImovel'];
 			$descricaoImovel = $_POST['descricaoImovel'];
@@ -100,8 +107,11 @@
 			$executar = mysqli_query($conexao, $inserir);
 			
 			if ($executar){
-        echo "<h3-->Dados inseridos com sucesso!"; } else { echo "
-              <h3>Não foi possivel inserir</h3>";} } ?&gt; </div>
+        echo "<h3>Dados inseridos com sucesso!</h3>"; 
+      } 
+      else { echo "<h3>Não foi possivel  inserir</h3>";}
+    } ?>
+            </div>
           </div>
         </div>
       </div>
