@@ -72,7 +72,7 @@
     <div class="container">
       <div class="media-container-row bg-warning">
         <div class="title col-12 col-md-8">
-          <h2 class="align-center pb-3 mbr-fonts-style display-2">Buscar Usuário</h2>
+          <h2 class="align-center pb-3 mbr-fonts-style display-2">Buscar Clientes</h2>
           <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5"></h3>
         </div>
       </div>
