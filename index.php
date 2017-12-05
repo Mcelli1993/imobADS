@@ -64,7 +64,7 @@
               <div class="icon-block">
                 <a href="page3.php"> <span class="mbr-iconfont mbri-users" media-simple="true"></span> </a>
               </div>
-              <h5 class="mbr-fonts-style display-5">Cadastrar Usuários</h5>
+              <h5 class="mbr-fonts-style display-5">Cadastrar Funcionários</h5>
             </div>
             <div class="card col-12 col-md-6 col-lg-3">
               <div class="icon-block">

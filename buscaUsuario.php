@@ -72,7 +72,7 @@
     <div class="container">
       <div class="media-container-row bg-warning">
         <div class="title col-12 col-md-8">
-          <h2 class="align-center pb-3 mbr-fonts-style display-2">Buscar Usuário</h2>
+          <h2 class="align-center pb-3 mbr-fonts-style display-2">Buscar Funcionário</h2>
           <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5"></h3>
         </div>
       </div>
@@ -118,7 +118,7 @@
                 <th class="head-item mbr-fonts-style display-7 bg-secondary">Endereço</th>
                 <th>CEP</th>
                 <th>Fone</th>
-                <th>Prioridade</th>
+                <th>Cargo</th>
                 <th>Ação</th>
                 <th>Ação</th>
               </tr>

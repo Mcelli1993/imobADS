@@ -75,7 +75,7 @@ include 'PHP/conexion.php';
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8">
           <h3 class="mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style display-2">&nbsp; Formulário de Cadastro
-            <br>de &nbsp;Usuários
+            <br>de &nbsp;Funcionários
             <br> </h3>
           <form class="" method="post" action="page3.php">
             <div class="form-group"> <label>Nome</label>
@@ -89,7 +89,7 @@ include 'PHP/conexion.php';
             <div class="form-group"> <label>CEP</label>
               <input type="text" name="cepUser" class="form-control" placeholder="CEP"> 
               
-              <div class="form-group"> <label>Prioridade</label>
+              <div class="form-group"> <label>Cargo</label>
               
                 
                 <select name="tipoUser" class="form-control" >
