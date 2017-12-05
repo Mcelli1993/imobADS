@@ -103,7 +103,7 @@
         </div>
         <div class="col-md-3 text-center my-1">
           <div class="form-group text-center"> <select class="form-control" id="sel1">
-    <option>Usuários</option>
+    <option>Vendedores</option>
     <option>Imóveis</option>
     <option>Vendas</option>
     <option>Aluguéis</option>
