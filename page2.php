@@ -103,7 +103,7 @@ include("PHP/conexion.php");
 			$cepImovel = $_POST['cepImovel'];
 			$precoImovel = $_POST['precoImovel'];
 			
-			$inserir = "INSERT into imoveis (endereo,descricao,proprietario,cep,preco) VALUES ('$enderecoImovel','$descricaoImovel','$proprietarioImovel','$cepImovel','$precoImovel')";
+			$inserir = "INSERT into imoveis (endereco,descricao,proprietario,cep,preco) VALUES ('$enderecoImovel','$descricaoImovel','$proprietarioImovel','$cepImovel','$precoImovel')";
 			$executar = mysqli_query($conexao, $inserir);
 			
 			if ($executar){

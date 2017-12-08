@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 02-Dez-2017 às 00:06
+-- Generation Time: 07-Dez-2017 às 02:00
 -- Versão do servidor: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -31,11 +31,12 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `alugueis`;
 CREATE TABLE IF NOT EXISTS `alugueis` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `cliente_id` int(11) NOT NULL,
+  `endereco` varchar(50) NOT NULL DEFAULT '0',
+  `cliente_id` varchar(50) NOT NULL,
+  `vendedor` varchar(50) NOT NULL,
+  `periodo` varchar(50) NOT NULL,
   `valor` float NOT NULL,
-  `prazo` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `cliente_id` (`cliente_id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -48,10 +49,10 @@ DROP TABLE IF EXISTS `clientes`;
 CREATE TABLE IF NOT EXISTS `clientes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
-  `rua` varchar(50) NOT NULL,
-  `cidade` varchar(50) NOT NULL,
+  `rg` bigint(20) NOT NULL,
+  `cpf` bigint(20) NOT NULL,
+  `endereco` varchar(50) NOT NULL,
   `cep` varchar(50) NOT NULL,
-  `numero_casa` int(11) NOT NULL,
   `telefone` bigint(20) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -66,9 +67,8 @@ DROP TABLE IF EXISTS `comissoes`;
 CREATE TABLE IF NOT EXISTS `comissoes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `valor` bigint(20) NOT NULL,
-  `funcionario_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK_funcionario` (`funcionario_id`)
+  `funcionario_id` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -130,11 +130,10 @@ CREATE TABLE IF NOT EXISTS `login` (
 DROP TABLE IF EXISTS `salarios`;
 CREATE TABLE IF NOT EXISTS `salarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `comissoes_id` int(11) NOT NULL,
+  `comissoes_id` float NOT NULL,
   `qtd_vendas` bigint(20) NOT NULL,
   `salario` bigint(20) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK_comissoes` (`comissoes_id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -146,39 +145,13 @@ CREATE TABLE IF NOT EXISTS `salarios` (
 DROP TABLE IF EXISTS `vendas`;
 CREATE TABLE IF NOT EXISTS `vendas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `funcionario_id` int(11) NOT NULL,
-  `qtd` bigint(20) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK_func` (`funcionario_id`)
+  `endereco` varchar(50) NOT NULL DEFAULT '0',
+  `proprietario` varchar(50) NOT NULL DEFAULT '0',
+  `funcionario_id` varchar(50) NOT NULL,
+  `comissao` float NOT NULL,
+  `valor` float NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Constraints for dumped tables
---
-
---
--- Limitadores para a tabela `alugueis`
---
-ALTER TABLE `alugueis`
-  ADD CONSTRAINT `FK_cliente_id` FOREIGN KEY (`cliente_id`) REFERENCES `clientes` (`id`);
-
---
--- Limitadores para a tabela `comissoes`
---
-ALTER TABLE `comissoes`
-  ADD CONSTRAINT `FK_funcionario` FOREIGN KEY (`funcionario_id`) REFERENCES `funcionarios` (`id`);
-
---
--- Limitadores para a tabela `salarios`
---
-ALTER TABLE `salarios`
-  ADD CONSTRAINT `FK_comissoes` FOREIGN KEY (`comissoes_id`) REFERENCES `comissoes` (`id`);
-
---
--- Limitadores para a tabela `vendas`
---
-ALTER TABLE `vendas`
-  ADD CONSTRAINT `FK_func` FOREIGN KEY (`funcionario_id`) REFERENCES `funcionarios` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

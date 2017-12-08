@@ -1,3 +1,7 @@
+<?php
+include("PHP/conexion.php");
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -74,36 +78,41 @@
           <h3 class="mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style display-2 text-center text-dark">&nbsp; Formulário de Cadastro
             <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;de &nbsp;Clientes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
             <br> </h3>
-          <form class="" method="post" action="page3.php">
+          <form class="" method="post" action="page7.php">
             <div class="form-group"> <label>Nome</label>
-              <input type="text" name="nome" class="form-control" placeholder="Nome"> </div>
+              <input type="text" name="nomeCli" class="form-control" placeholder="Nome"> </div>
             <div class="form-group"> <label>RG</label>
-              <input type="text" name="rg" class="form-control" placeholder="RG"> </div>
+              <input type="text" name="rgCli" class="form-control" placeholder="RG"> </div>
             <div class="form-group"> <label>CPF</label>
-              <input type="text" name="cpf" class="form-control" placeholder="CPF"> </div>
+              <input type="text" name="cpfCli" class="form-control" placeholder="CPF"> </div>
             <div class="form-group"> <label>Endereço</label>
-              <input type="text" name="endereco" class="form-control" placeholder="Endereço"> </div>
+              <input type="text" name="enderecoCli" class="form-control" placeholder="Endereço"> </div>
             <div class="form-group"> <label>CEP</label>
-              <input type="text" name="cep" class="form-control" placeholder="CEP">
-              <div class="mbr-subscribe input-group input-group-lg bg-light text-info my-3">
-                <div class="dropdown-menu">
-                  <a class="dropdown-item text-dark" href="#">Vendedor</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Gerente</a>
-                </div> <span class="input-group-btn"></span> </div>
+              <input type="text" name="cepCli" class="form-control" placeholder="CEP"> </div>
+             <div class="form-group"> <label>Telefone</label>
+            <input type="text" name="telefoneCli" class="form-control" placeholder="Telefone">
             </div>
+          	<button type="submit" class="btn btn-primary text-center text-uppercase px-5 mx-5" name="inserir">Cadastrar</button>
           </form>
-          <div class="form-group"> <label>Telefone</label>
-            <input type="text" name="cep" class="form-control" placeholder="Telefone">
-            <div class="mbr-subscribe input-group input-group-lg bg-light text-info my-3">
-              <div class="dropdown-menu">
-                <a class="dropdown-item text-dark" href="#">Vendedor</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Gerente</a>
-              </div> <span class="input-group-btn"></span> </div>
-          </div>
-          <button type="submit" class="btn btn-primary text-center text-uppercase px-5 mx-5">Cadastrar</button>
-        </div>
+         
+         	<?php
+		if(isset($_POST['inserir'])){
+			$nomeCliente = $_POST['nomeCli'];
+			$rgCliente = $_POST['rgCli'];
+			$cpfCliente = $_POST['cpfCli'];
+			$enderecoCliente = $_POST['enderecoCli'];
+			$cepCliente = $_POST['cepCli'];
+			$telefonecliente = $_POST['telefoneCli'];
+			
+			$inserir = "INSERT into clientes (nome,rg,cpf,endereco,cep,telefone) VALUES ('$nomeCliente','$rgCliente','$cpfCliente','$enderecoCliente','$cepCliente','$telefonecliente')";
+			$executar = mysqli_query($conexao, $inserir);
+			
+			if ($executar){
+        echo "<h3>Dados inseridos com sucesso!</h3>"; 
+      } 
+      else { echo "<h3>Não foi possivel  inserir</h3>";}
+    } ?>
+            
       </div>
     </div>
   </section>
@@ -147,7 +156,7 @@
     </div>
   </section>
   <section class="mbr-section form3 cid-qzsdFhO0zu" id="form3-1j" data-rv-view="195"></section>
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <!--<script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -155,7 +164,7 @@
   <script src="assets/dropdown/js/script.min.js"></script>
   <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script> -->
 </body>
 
 </html>
