@@ -104,7 +104,7 @@ include("PHP/conexion.php");
 			$precoImovel = $_POST['precoImovel'];
 			
 			$inserir = "INSERT into imoveis (endereco,descricao,proprietario,cep,preco) VALUES ('$enderecoImovel','$descricaoImovel','$proprietarioImovel','$cepImovel','$precoImovel')";
-			$executar = mysqli_query($conexao, $inserir);
+			$executar = mysqli_query($db, $inserir);
 			
 			if ($executar){
         echo "<h3>Dados inseridos com sucesso!</h3>"; 

@@ -99,7 +99,7 @@
           </form>
         </div>
         <div class="col-md-3">
-          <button type="submit" class="btn btn-primary">CONSULTAR</button>
+          <button type="submit" class="btn btn-primary" name="enviar">CONSULTAR</button>
         </div>
         <div class="col-md-3 text-center my-1">
           <div class="form-group text-center"> <select class="form-control" id="sel1">

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<?php include 'conexion.php';
+<?php
+include ("PHP/conexion.php");
 $id = $_GET['id'];
 $sql = "select * from imoveis where id = '$id'";
 $rows = $db->query($sql);

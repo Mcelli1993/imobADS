@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<?php include 'conexion.php';
+<?php
+include ("PHP/conexion.php");
 $page = (isset($_GET['page'])?$_GET['page']:1);
 $perPage = (isset($_GET['perPage']) && ($_GET['perPage'])<=50 ? $_GET['perPage'] : 5);
 $start = ($page > 1) ? ($page * $perPage) - $perPage : 0;
