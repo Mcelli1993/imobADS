@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php include 'conexion.php';
+$page = (isset($_GET['page'])?$_GET['page']:1);
+$perPage = (isset($_GET['perPage']) && ($_GET['perPage'])<=50 ? $_GET['perPage'] : 5);
+$start = ($page > 1) ? ($page * $perPage) - $perPage : 0;
+
+
+$sql = "select * from imoveis limit ".$start.",".$perPage." ";
+$total = $db->query("select * from imoveis")->num_rows;
+$pages = ceil($total / $perPage);
+$rows = $db->query($sql);
+?>
 <html>
 
 <head>
@@ -111,6 +122,7 @@
         <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
           <thead>
             <tr class="table-heads ">
+              <th class="head-item mbr-fonts-style display-7"> Id</th>  
               <th class="head-item mbr-fonts-style display-7"> Endereço&nbsp;</th>
               <th class="head-item mbr-fonts-style display-7"> Descrição</th>
               <th class="head-item mbr-fonts-style display-7">Proprietário</th>
@@ -121,22 +133,22 @@
             </tr>
           </thead>
           <tbody>
+              <?php while($row = $rows->fetch_assoc()){ ?>
             <tr>
-              <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
-              <td class="body-item mbr-fonts-style display-7">Casa</td>
-              <td class="body-item mbr-fonts-style display-7">2016-10-17</td>
-              <td class="body-item mbr-fonts-style display-7">$317.000 </td>
-              <td>100000</td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['id']; ?></td>  
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['endereco']; ?></td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['descricao']; ?></td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['proprietario']; ?></td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['cep']; ?></td>
+              <td><?php echo $row['preco']; ?></td>
               <td>
-                <a class="nav-link text-center" href="#">ALTERAR</a>
+                <a class="nav-link text-center" href="update.php?id=<?php echo $row['id'];?>">ALTERAR</a>
               </td>
               <td>
-                <a class="nav-link text-center" href="#">EXCLUIR</a>
+                <a class="nav-link text-center" href="delete.php?id=<?php echo $row['id'];?>">EXCLUIR</a>
               </td>
             </tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
+            <?php } ?>
           </tbody>
         </table>
       </div>
