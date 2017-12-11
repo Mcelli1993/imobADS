@@ -112,7 +112,7 @@ include 'PHP/conexion.php';
 			$tipoUsuario = $_POST['tipoUser'];
 			
 			$inserir = "INSERT into funcionarios (nome,rg,cpf,endereco,cep,cargo) VALUES ('$nomeUsuario','$rgUsuario','$cpfUsuario','$enderecoUsuario','$cepUsuario','$tipoUsuario')";
-			$executar = mysqli_query($conexao, $inserir);
+			$executar = mysqli_query($db, $inserir);
 			
 			if ($executar){
         echo "<h3>Dados inseridos com sucesso!</h3>"; 

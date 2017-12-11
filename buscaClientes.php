@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<?php
+include ("PHP/conexion.php");
+$page = (isset($_GET['page'])?$_GET['page']:1);
+$perPage = (isset($_GET['perPage']) && ($_GET['perPage'])<=10 ? $_GET['perPage'] : 5);
+$start = ($page > 1) ? ($page * $perPage) - $perPage : 0;
+
+
+$sql = "select * from clientes limit ".$start.",".$perPage." ";
+$total = $db->query("select * from clientes")->num_rows;
+$pages = ceil($total / $perPage);
+$rows = $db->query($sql);
+?>
 <html>
 
 <head>

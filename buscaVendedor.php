@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<?php
+include ("PHP/conexion.php");
+$page = (isset($_GET['page'])?$_GET['page']:1);
+$perPage = (isset($_GET['perPage']) && ($_GET['perPage'])<=50 ? $_GET['perPage'] : 5);
+$start = ($page > 1) ? ($page * $perPage) - $perPage : 0;
+
+
+$sql = "select * from funcionarios limit ".$start.",".$perPage." ";
+$total = $db->query("select * from funcionarios")->num_rows;
+$pages = ceil($total / $perPage);
+$rows = $db->query($sql);
+?>
 <html>
 
 <head>
@@ -112,6 +124,7 @@
           <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
             <thead>
               <tr class="table-heads ">
+              	<th class="head-item mbr-fonts-style display-7"> ID</th>
                 <th class="head-item mbr-fonts-style display-7"> Nome</th>
                 <th class="head-item mbr-fonts-style display-7"> RG</th>
                 <th class="head-item mbr-fonts-style display-7">CPF</th>
@@ -124,25 +137,27 @@
               </tr>
             </thead>
             <tbody>
+            <?php while($row = $rows->fetch_assoc()){ ?>
               <tr>
-                <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
-                <td class="body-item mbr-fonts-style display-7">1111111</td>
-                <td class="body-item mbr-fonts-style display-7">02678823</td>
-                <td class="body-item mbr-fonts-style display-7">Costa gama</td>
-                <td>95520000</td>
-                <td>95520000 </td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['id']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['nome']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['rg']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['cpf']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['endereco']; ?></td>
+                <td><?php echo $row['cep']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['cargo']; ?></td>
                 <td>1</td>
                 <td>
                   <ul class="nav nav-pills flex-column text-center">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">ALTERAR</a>
+                      <a class="nav-link text-center" href="updateVendedor.php?editar=<?php echo $row['id'];?>">ALTERAR</a>
                     </li>
                   </ul>
                 </td>
                 <td>
                   <ul class="nav nav-pills flex-column text-center">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">EXCLUIR</a>
+                     <a class="nav-link text-center" href="deleteVendedor.php?excluir=<?php echo $row['id'];?>">EXCLUIR</a>
                     </li>
                   </ul>
                 </td>
@@ -150,6 +165,7 @@
               <tr></tr>
               <tr></tr>
               <tr></tr>
+              <?php } ?>
             </tbody>
           </table>
         </div>
@@ -199,7 +215,7 @@
       </div>
     </div>
   </div>
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <!-- <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -209,7 +225,7 @@
   <script src="assets/data-tables/data-tables.bootstrap4.min.js"></script>
   <script src="assets/smooth-scroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script> -->
 </body>
 
 </html>

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php 
+include 'PHP/conexion.php';
+?>
 <html>
 
 <head>
@@ -75,38 +78,42 @@
         <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
           <div class="card">
             <div class="card-body p-5">
-              <form action="page2.php" method="POST">
+              <form action="page4.php" method="POST">
                 <div class="form-group"> <label>Endereço</label>
-                  <input class="form-control" placeholder="Endereço" name="enderecoImovel"> </div>
+                  <input class="form-control" placeholder="Endereço" name="enderecoVenda"> </div>
                 <div class="form-group"> <label>Proprietário</label>
-                  <input class="form-control" placeholder="Proprietário" name="descricaoImovel"> </div>
+                  <input class="form-control" placeholder="Proprietário" name="descricaoVenda"> </div>
                 <div class="form-group"> <label>Vendedor</label> </div>
-                <input class="form-control p-0" placeholder="Vendedor" name="proprietarioImovel">
+                <input class="form-control p-0" placeholder="Vendedor" name="proprietarioVenda">
                 <div class="form-group"> <label>Comissão</label> </div>
-                <input class="form-control" placeholder="Comissão" name="cepImovel">
+                <input class="form-control" placeholder="Comissão" name="cepVenda">
                 <div class="form-group"> <label>Valor</label> </div>
-                <input class="form-control my-3" placeholder="Valor" name="precoImovel">
+                <input class="form-control my-3" placeholder="Valor" name="precoVenda">
                 <button type="submit" class="btn mt-2 btn-outline-dark text-center text-uppercase mx-5 px-5" name="inserir">CADASTRAR</button>
               </form>
-              <!--?php
-		if(isset($_POST['inserir'])){
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+         <?php
+		    if(isset($_POST['inserir'])){
 			$enderecoImovel = $_POST['enderecoImovel'];
 			$descricaoImovel = $_POST['descricaoImovel'];
 			$proprietarioImovel = $_POST['proprietarioImovel'];
 			$cepImovel = $_POST['cepImovel'];
 			$precoImovel = $_POST['precoImovel'];
 			
-			$inserir = "INSERT into imoveis (endereo,descricao,proprietario,cep,preco) VALUES ('$enderecoImovel','$descricaoImovel','$proprietarioImovel','$cepImovel','$precoImovel')";
-			$executar = mysqli_query($conexao, $inserir);
+			$inserir = "INSERT into imoveis (endereo,proprietario,cep,preco) VALUES ('$enderecoImovel','$descricaoImovel','$proprietarioImovel','$cepImovel','$precoImovel')";
+			$executar = mysqli_query($db, $inserir);
 			
 			if ($executar){
-        echo "<h3Dados inseridos com sucesso!"; } else { echo "";} } ?&gt;-->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+			    echo "<h3>Dados inseridos com sucesso!</h3>";
+			}
+			else { echo "<h3>Não foi possivel  inserir</h3>";}
+    }   ?>
+	    
   <section class="mbr-section form3 cid-qzrXUURXh8" id="form3-15" data-rv-view="88">
     <div class="container">
       <div class="row justify-content-center">
@@ -122,5 +129,4 @@
     </div>
   </section>
 </body>
-
 </html>
