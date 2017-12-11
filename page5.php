@@ -102,12 +102,12 @@
           <button type="submit" class="btn btn-primary" name="enviar">CONSULTAR</button>
         </div>
         <div class="col-md-3 text-center my-1">
-          <div class="form-group text-center"> <select class="form-control" id="sel1">
-    <option>Vendedores</option>
-    <option>Imóveis</option>
-    <option>Vendas</option>
-    <option>Aluguéis</option>
-    <option>Clientes</option>
+          <div class="form-group text-center"> <select name="buscas" class="form-control" id="sel1">
+    <option value="vendedopres">Vendedores</option>
+    <option value="imoveis">Imóveis</option>
+    <option value="vendas">Vendas</option>
+    <option value="alugueis">Aluguéis</option>
+    <option value="clientes">Clientes</option>
    
   </select> </div>
         </div>
@@ -153,7 +153,7 @@
       </div>
     </div>
   </div>
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <!-- <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -163,7 +163,7 @@
   <script src="assets/data-tables/data-tables.bootstrap4.min.js"></script>
   <script src="assets/smooth-scroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script> -->
 </body>
 
 </html>

@@ -143,10 +143,10 @@ $rows = $db->query($sql);
               <td class="body-item mbr-fonts-style display-7"><?php echo $row['cep']; ?></td>
               <td><?php echo $row['preco']; ?></td>
               <td>
-                <a class="nav-link text-center" href="update.php?id=<?php echo $row['id'];?>">ALTERAR</a>
+                <a class="nav-link text-center" href="update.php?editar=<?php echo $row['id'];?>">ALTERAR</a>
               </td>
               <td>
-                <a class="nav-link text-center" href="delete.php?id=<?php echo $row['id'];?>">EXCLUIR</a>
+                <a class="nav-link text-center" href="delete.php?excluir=<?php echo $row['id'];?>">EXCLUIR</a>
               </td>
             </tr>
             <?php } ?>
@@ -163,7 +163,7 @@ $rows = $db->query($sql);
     </div>
   </div>
   <div class="container container-table"></div>
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <!--  --><script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -173,7 +173,7 @@ $rows = $db->query($sql);
   <script src="assets/data-tables/data-tables.bootstrap4.min.js"></script>
   <script src="assets/smooth-scroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script> -->
 </body>
 
 </html>

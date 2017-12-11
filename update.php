@@ -1,26 +1,49 @@
-<!DOCTYPE html>
+
 <?php
 include ("PHP/conexion.php");
-$id = $_GET['id'];
-$sql = "select * from imoveis where id = '$id'";
-$rows = $db->query($sql);
-$row = $rows->fetch_assoc();
-if(isset($_POST['send'])){
-	$name = $_POST['task'];
-	$executar = mysqli_query("UPDATE imoveis SET proprietario = '$name' WHERE id = '$id';");
-        
-        if ($executar){
-		echo "<script>alert('Dados atualizados')</script>";
-		echo "<script>window.open('formulario.php','_self')</script>";
-	}
-	header('location:buscaImoveis.php');
+include 'buscaImoveis.php';
+
+
+if(isset($_GET['editar'])){
+    $id = $_GET['editar'];
+    $consultar = "select * from imoveis where id = '$id'";
+    $executar = mysqli_query($db, $consultar);
+    
+    $row = mysqli_fetch_array($executar,MYSQLI_ASSOC);
+    
+    $id = $row['id'];
+    $endereco = $row['endereco'];
+    $descricao = $row['descricao'];
+    $proprietario = $row['proprietario']; 
+    $cep = $row['cep'];
+    $preco =$row['preco'];
+}
+
+
+if(isset($_POST["inserir"])){
+    
+    $atualizaEndereco = $_POST['enderecoImovel'];
+    $atualizaDescricao = $_POST['descricaoImovel'];
+    $atualizaProprietario = $_POST['proprietarioImovel'];
+    $atualizaCep = $_POST['cepImovel'];
+    $atualizaPreco = $_POST['precoImovel'];
+    
+    $sql2 = "UPDATE imoveis SET endereco='$atualizaEndereco', descricao='$atualizaDescricao', proprietario='$atualizaProprietario', cep='$atualizaCep', preco='$atualizaPreco' WHERE id = '$id'";
+    
+    $executar = mysqli_query($db, $sql2);
+    if ($executar){
+    echo "<script>alert('Dados atualizados')</script>";
+    echo "<script>window.open('buscaImoveis.php','_self')</script>";
+    }
+    //header('location:buscaImoveis.php');
 }
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <title>CRUD</title>
 </head>
 <body>
@@ -30,13 +53,27 @@ if(isset($_POST['send'])){
 	<div class="col-md-10 col-md-offset-1">	
 
 	<hr><br>
-        <form method="post" action="buscaImoveis.php">
+        <form method="POST" action="">
+          <label>Endereço:</label>
+          <input type="text" name="enderecoImovel" value="<?php echo $endereco;?>" class="form-control">
+          <label>Descrição:</label>
+          <input type="text" name="descricaoImovel" value="<?php echo $descricao;?>" class="form-control">
           <label>Proprietario:</label>
-          <input type="text" required name="task" value="<?php echo $row['proprietario'];?>" class="form-control">
+          <input type="text" name="proprietarioImovel" value="<?php echo $proprietario;?>" class="form-control">
+          <label>CEP:</label>
+          <input type="text" name="cepImovel" value="<?php echo $cep;?>" class="form-control">
+          <label>Preço:</label>
+          <input type="text" name="precoImovel" value="<?php echo $preco;?>" class="form-control">
           
-          <input type="submit" name="send" value="atualizar" class="btn btn-success">
+          <!-- <input type="submit" name="atualizar" value="atualizar" class="btn btn-success"> -->
+          <button type="submit" class="btn mt-2 btn-outline-dark text-center text-uppercase mx-5 px-5" name="inserir">Atualizar</button>
           <a href="buscaImoveis.php" class="btn btn-warning">Back</a>          
           </form>
+          <?php 
+          
+	
+	
+	?>
 	</div>
 	</div>
 </div>

@@ -88,7 +88,7 @@ include("PHP/conexion.php");
                 <div class="form-group"> <label>Descrição</label>
                   <input class="form-control" placeholder="Descrição" name="descricaoImovel"> </div>
                 <div class="form-group"> <label>Proprietario</label> </div>
-                <input class="form-control p-0 my-3" placeholder="Proprietário"  name="proprietarioImovel">
+                <input class="form-control p-0 my-3" placeholder="Proprietário" required name="proprietarioImovel">
                 <div class="form-group"> <label>CEP</label> </div>
                 <input class="form-control" placeholder="CEP" name="cepImovel">
                 <div class="form-group"> <label>Preço</label> </div>
