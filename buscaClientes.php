@@ -136,25 +136,27 @@ $rows = $db->query($sql);
               </tr>
             </thead>
             <tbody>
+             <?php while($row = $rows->fetch_assoc()){ ?>
               <tr>
-                <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
-                <td class="body-item mbr-fonts-style display-7">1111111</td>
-                <td class="body-item mbr-fonts-style display-7">02678823</td>
-                <td class="body-item mbr-fonts-style display-7">Costa gama</td>
-                <td>95520000</td>
-                <td>95520000 </td>
-                <td>1</td>
+              	<td class="body-item mbr-fonts-style display-7"><?php echo $row['id']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['nome']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['rg']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['cpf']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['endereco']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['cep']; ?></td>
+                <td class="body-item mbr-fonts-style display-7"><?php echo $row['telefone']; ?></td>
+                
                 <td>
                   <ul class="nav nav-pills flex-column text-center">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">ALTERAR</a>
+                      <a class="nav-link text-center" href="updateClientes.php?editar=<?php echo $row['id'];?>">ALTERAR</a>
                     </li>
                   </ul>
                 </td>
                 <td>
                   <ul class="nav nav-pills flex-column text-center">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">EXCLUIR</a>
+                      <a class="nav-link text-center" href="deleteClientes.php?excluir=<?php echo $row['id'];?>">EXCLUIR</a>
                     </li>
                   </ul>
                 </td>
@@ -162,6 +164,7 @@ $rows = $db->query($sql);
               <tr></tr>
               <tr></tr>
               <tr></tr>
+              <?php } ?>
             </tbody>
           </table>
         </div>
