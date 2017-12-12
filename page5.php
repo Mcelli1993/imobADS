@@ -72,87 +72,63 @@
     <div class="container">
       <div class="media-container-row">
         <div class="title col-12 col-md-8">
-          <h2 class="align-center pb-3 mbr-fonts-style display-2">Selecione uma Tabela para Consultar</h2>
-          <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5"></h3>
+          <h2 class="align-center pb-3 mbr-fonts-style display-2 my-5">Selecione uma Tabela para Consultar</h2>
         </div>
       </div>
     </div>
   </section>
-  <section class="mbr-section form3 cid-qzXt8tmuzt bg-warning" id="form3-1t" data-rv-view="2086">
+  <section class="mbr-section form3 cid-qzXt8tmuzt bg-warning" id="form3-1t" data-rv-view="2086"></section>
+  <div class="py-5">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="title col-12 col-lg-8"> </div>
-      </div>
-      <div class="row py-2 justify-content-center">
-        <div class="col-12 col-lg-6  col-md-3 " data-form-type="formoid">
-          <div data-form-alert="" hidden="">Thanks for filling out the form!</div>
-          <form class="mbr-form" action="page5.php" method="post" data-form-title="Mobirise Form">
-            <input type="hidden" data-form-email="true" value="AcjDyygK6QxFyLdoAQ/lYEwfPacwnUzbz9yEv+et9RpeIBEdEe2tRJcNV5sfBw26uJAOHTCuBuQBvvfUgEjutKoRsjnUvoeI6L7HVTKtaKHWI3q8J61LswEx8oYT4NFQ">
-            <div class="mbr-subscribe input-group"> <span class="input-group-btn"></span> </div>
-          </form>
-        </div>
-        <div class="col-12 col-lg-6  col-md-3 " data-form-type="formoid">
-          <div data-form-alert="" hidden="">Thanks for filling out the form!</div>
-          <form class="mbr-form" action="page5.php" method="post" data-form-title="Mobirise Form">
-            <input type="hidden" data-form-email="true" value="AcjDyygK6QxFyLdoAQ/lYEwfPacwnUzbz9yEv+et9RpeIBEdEe2tRJcNV5sfBw26uJAOHTCuBuQBvvfUgEjutKoRsjnUvoeI6L7HVTKtaKHWI3q8J61LswEx8oYT4NFQ">
-            <div class="mbr-subscribe input-group"> <span class="input-group-btn"></span> </div>
-          </form>
-        </div>
-        <div class="col-md-3">
-          <button type="submit" class="btn btn-primary" name="enviar">CONSULTAR</button>
-        </div>
-        <div class="col-md-3 text-center my-1">
-          <div class="form-group text-center"> <select name="buscas" class="form-control" id="sel1">
-    <option value="vendedopres">Vendedores</option>
+      <form class="mbr-form filds" action="page5.php" method="post" data-form-title="Mobirise Form">
+        <div class="row">
+          <div class="col-md-12 text-center my-1 w-25">
+            <div class="form-group text-center p-1 mx-auto w-25"> <select name="buscas" class="form-control" id="sel1">
+    <option value="vendedores">Vendedores</option>
     <option value="imoveis">Imóveis</option>
     <option value="vendas">Vendas</option>
     <option value="alugueis">Aluguéis</option>
     <option value="clientes">Clientes</option>
    
   </select> </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section-table cid-qzXuz5YFR6 bg-warning" id="table1-1w" data-rv-view="2089">
-    <div class="container container-table"></div>
-  </section>
-  <div class="container container-table">
-    <div class="table-wrapper">
-      <div class="container">
-        <div class="row search">
-          <div class="col-md-12">
-            <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label> </div>
+            <div class="col-md-3"> </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary" name="enviar">CONSULTAR</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container table-info-container">
-        <div class="row info">
-          <div class="col-md-6">
-            <div class="dataTables_info mbr-fonts-style display-7"> <span class="inactive infoRows"></span> <span class="inactive infoRows"></span> </div>
-          </div>
-        </div>
-      </div>
+      </form>
     </div>
   </div>
-  <div class="container container-table">
-    <div class="table-wrapper">
-      <div class="container">
-        <div class="row search">
-          <div class="col-md-12">
-            <div class="dataTables_filter"> <label class="searchInfo mbr-fonts-style display-7"></label> </div>
-          </div>
-        </div>
-      </div>
-      <div class="container table-info-container">
-        <div class="row info">
-          <div class="col-md-6">
-            <div class="dataTables_info mbr-fonts-style display-7"> <span class="inactive infoRows"></span> <span class="inactive infoRows"></span> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <?php
+  if(isset($_POST['enviar']))
+  {
+  if ($_POST['buscas'] == "vendedores") {
+
+  echo  "<script> location.replace('buscaVendedor.php'); </script>";
+ 
+    exit;
+  }
+  if ($_POST['buscas'] == "imoveis") {
+    echo  "<script> location.replace('buscaImoveis.php'); </script>";
+     exit;
+   }
+     if ($_POST['buscas'] == "vendas") {
+      echo  "<script> location.replace('buscaVendas.php'); </script>";
+     exit;
+   }
+     if ($_POST['buscas'] == "alugueis") {
+      echo  "<script> location.replace('buscaAlugueis.php'); </script>";
+     exit;
+   }
+    if ($_POST['buscas'] == "clientes") {
+      echo  "<script> location.replace('buscaClientes.php'); </script>";
+     exit;
+   }
+    
+}
+    ?>
   <!-- <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
