@@ -141,10 +141,12 @@ $rows = $db->query($sql);
         <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
           <thead>
             <tr class="table-heads ">
-              <th class="head-item mbr-fonts-style display-7"> Vendedor</th>
-              <th class="head-item mbr-fonts-style display-7"> Vendas</th>
-              <th class="head-item mbr-fonts-style display-7">Comissões</th>
-              <th class="head-item mbr-fonts-style display-7 bg-secondary">Salário</th>
+              <th class="head-item mbr-fonts-style display-7"> id</th>
+              <th class="head-item mbr-fonts-style display-7"> Endereço</th>
+              <th class="head-item mbr-fonts-style display-7">Proprietário</th>
+              <th class="head-item mbr-fonts-style display-7 bg-secondary">Vendedor</th>
+              <th class="head-item mbr-fonts-style display-7 bg-secondary">Comissão</th>
+              <th class="head-item mbr-fonts-style display-7 bg-secondary">Valor</th>
               <th>Ação</th>
               <th>Ação</th>
             </tr>
