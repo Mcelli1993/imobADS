@@ -105,7 +105,7 @@ include("PHP/conexion.php");
 			$telefonecliente = $_POST['telefoneCli'];
 			
 			$inserir = "INSERT into clientes (nome,rg,cpf,endereco,cep,telefone) VALUES ('$nomeCliente','$rgCliente','$cpfCliente','$enderecoCliente','$cepCliente','$telefonecliente')";
-			$executar = mysqli_query($conexao, $inserir);
+			$executar = mysqli_query($db, $inserir);
 			
 			if ($executar){
         echo "<h3>Dados inseridos com sucesso!</h3>"; 
