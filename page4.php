@@ -82,11 +82,11 @@ include 'PHP/conexion.php';
                 <div class="form-group"> <label>Endereço</label>
                   <input class="form-control" placeholder="Endereço" name="enderecoVenda"> </div>
                 <div class="form-group"> <label>Proprietário</label>
-                  <input class="form-control" placeholder="Proprietário" name="descricaoVenda"> </div>
+                  <input class="form-control" placeholder="Proprietário" name="proprietarioVenda"> </div>
                 <div class="form-group"> <label>Vendedor</label> </div>
-                <input class="form-control p-0" placeholder="Vendedor" name="proprietarioVenda">
+                <input class="form-control p-0" placeholder="Vendedor" name="funcionarioVenda">
                 <div class="form-group"> <label>Comissão</label> </div>
-                <input class="form-control" placeholder="Comissão" name="cepVenda">
+                <input class="form-control" placeholder="Comissão" name="comissaoVenda">
                 <div class="form-group"> <label>Valor</label> </div>
                 <input class="form-control my-3" placeholder="Valor" name="precoVenda">
                 <button type="submit" class="btn mt-2 btn-outline-dark text-center text-uppercase mx-5 px-5" name="inserir">CADASTRAR</button>
@@ -99,13 +99,13 @@ include 'PHP/conexion.php';
   </section>
          <?php
 		    if(isset($_POST['inserir'])){
-			$enderecoImovel = $_POST['enderecoImovel'];
-			$descricaoImovel = $_POST['descricaoImovel'];
-			$proprietarioImovel = $_POST['proprietarioImovel'];
-			$cepImovel = $_POST['cepImovel'];
-			$precoImovel = $_POST['precoImovel'];
+			$enderecoVenda = $_POST['enderecoVenda'];
+			$proprietarioVenda = $_POST['proprietarioVenda'];
+			$funcionarioVenda = $_POST['funcionarioVenda'];
+			$comissaoVenda = $_POST['comissaoVenda'];
+			$precoVenda = $_POST['precoVenda'];
 			
-			$inserir = "INSERT into imoveis (endereo,proprietario,cep,preco) VALUES ('$enderecoImovel','$descricaoImovel','$proprietarioImovel','$cepImovel','$precoImovel')";
+			$inserir = "INSERT into vendas (endereco,proprietario,funcionario_id,comissao,valor) VALUES ('$enderecoVenda','$proprietarioVenda','$funcionarioVenda','$comissaoVenda','$precoVenda')";
 			$executar = mysqli_query($db, $inserir);
 			
 			if ($executar){

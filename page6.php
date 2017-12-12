@@ -102,7 +102,7 @@ include("PHP/conexion.php");
 			$valorAlug = $_POST['valorAluguel'];
 			
 			$inserir = "INSERT into alugueis (endereco,cliente_id,vendedor,periodo,valor) VALUES ('$enderecoAlug','$locatarioAlug','$vendedorAlug','$periodoAlug','$valorAlug')";
-			$executar = mysqli_query($conexao, $inserir);
+			$executar = mysqli_query($db, $inserir);
 			
 			if ($executar){
 			    echo "<h3>Dados inseridos com sucesso!</h3>";
