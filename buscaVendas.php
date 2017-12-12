@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<?php
+include ("PHP/conexion.php");
+$page = (isset($_GET['page'])?$_GET['page']:1);
+$perPage = (isset($_GET['perPage']) && ($_GET['perPage'])<=50 ? $_GET['perPage'] : 5);
+$start = ($page > 1) ? ($page * $perPage) - $perPage : 0;
+
+
+$sql = "select * from vendas limit ".$start.",".$perPage." ";
+$total = $db->query("select * from vendas")->num_rows;
+$pages = ceil($total / $perPage);
+$rows = $db->query($sql);
+?>
 <html>
 
 <head>
@@ -138,21 +150,25 @@
             </tr>
           </thead>
           <tbody>
+          <?php while($row = $rows->fetch_assoc()){ ?>
             <tr>
-              <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
-              <td class="body-item mbr-fonts-style display-7">44</td>
-              <td class="body-item mbr-fonts-style display-7">10000</td>
-              <td class="body-item mbr-fonts-style display-7">$317.000 </td>
-              <td contenteditable="true" class="text-center">
-                <a class="nav-link" href="#">ALTERAR</a>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['id']; ?></td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['endereco']; ?></td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['proprietario']; ?></td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['funcionario_id']; ?></td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['comissao']; ?></td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $row['valor']; ?></td>
+              <td>
+                <a class="nav-link text-center" href="updateVendas.php?editar=<?php echo $row['id'];?>">ALTERAR</a>
               </td>
               <td>
-                <a class="nav-link text-center" href="#">EXCLUIR</a>
+                <a class="nav-link text-center" href="deleteVendas.php?excluir=<?php echo $row['id'];?>">EXCLUIR</a>
               </td>
             </tr>
             <tr></tr>
             <tr></tr>
             <tr></tr>
+            <?php } ?>
           </tbody>
         </table>
       </div>
@@ -165,7 +181,7 @@
       </div>
     </div>
   </div>
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <!--  <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -175,7 +191,7 @@
   <script src="assets/data-tables/data-tables.bootstrap4.min.js"></script>
   <script src="assets/smooth-scroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script> -->
 </body>
 
 </html>
