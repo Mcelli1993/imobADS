@@ -143,10 +143,10 @@ $rows = $db->query($sql);
               <td class="body-item mbr-fonts-style display-7"><?php echo $row['cep']; ?></td>
               <td><?php echo $row['preco']; ?></td>
               <td>
-                <a class="nav-link text-center" href="update.php?editar=<?php echo $row['id'];?>">ALTERAR</a>
+                <a class="nav-link text-center" href="updateImoveis.php?editar=<?php echo $row['id'];?>">ALTERAR</a>
               </td>
               <td>
-                <a class="nav-link text-center" href="delete.php?excluir=<?php echo $row['id'];?>">EXCLUIR</a>
+                <a class="nav-link text-center" href="deleteImoveis.php?excluir=<?php echo $row['id'];?>">EXCLUIR</a>
               </td>
             </tr>
             <?php } ?>
