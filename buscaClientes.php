@@ -142,13 +142,13 @@ $rows = $db->query($sql);
           <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
             <thead>
               <tr class="table-heads ">
+              <th class="head-item mbr-fonts-style display-7"> ID</th>
                 <th class="head-item mbr-fonts-style display-7"> Nome</th>
                 <th class="head-item mbr-fonts-style display-7"> RG</th>
                 <th class="head-item mbr-fonts-style display-7">CPF</th>
                 <th class="head-item mbr-fonts-style display-7 bg-secondary">Endereço</th>
-                <th>CEP</th>
-                <th>Fone</th>
-                <th>Prioridade</th>
+                <th class="head-item mbr-fonts-style display-7"> CEP</th>
+                <th class="head-item mbr-fonts-style display-7"> Telefone</th>
                 <th>Ação</th>
                 <th>Ação</th>
               </tr>
