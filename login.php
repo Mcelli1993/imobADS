@@ -50,8 +50,8 @@
   <section class="engine">
     <a href="https://mobirise.co/d">website software</a>
   </section>
-  <section class="mbr-section form1 cid-qzjLDVKZ64" id="form1-w" data-rv-view="48">
-    <div class="container">
+  <section class="mbr-section form1 cid-qzjLDVKZ64 bg-primary" id="form1-w" data-rv-view="48">
+    <div class="container bg-primary">
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8">
           <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2"> <strong>LOGIN</strong></h2>
@@ -66,12 +66,27 @@
           <form class="mbr-form mr-auto w-100 h-100" action="PHP/logincontrole.php" method="post"> <label>Nome</label>
             <input type="text" name="name" class="form-control border border-dark form-control-lg" placeholder="Digite o nome"> <label>Senha</label>
             <input type="password" name="password" class="form-control" placeholder="Digite a senha">
-            <button type="submit" class="btn btn-dark text-uppercase m-5 text-nowrap">ENVIAR</button>
+            <div class="row">
+              <div class="col-md-6 w-25">
+                <button type="submit" name="enviar" class="btn text-uppercase btn-dark text-nowrap w-75 p-3 m-3">ENTRAR</button>
+              </div>
+              <div class="col-md-6">
+                <button type="submit" name="cadastrar" class="btn btn-dark text-uppercase text-nowrap w-75 m-3 p-3">CADASTRAR</button>
+              </div>
+            </div>
           </form>
         </div>
         <div class="col-md-4"></div>
       </div> <span class="input-group-btn text-center"></span> </div>
   </section>
+  <div class="bg-primary p-0 mx-auto h-100 w-100">
+    <div class="container">
+      <div class="row bg-primary">
+        <div class="col-md-8"></div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </div>
   <!-- <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
