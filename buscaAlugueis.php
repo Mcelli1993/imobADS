@@ -143,11 +143,12 @@ $rows = $db->query($sql);
         <table class="table isSearch table-bordered bg-secondary" cellspacing="0">
           <thead>
             <tr class="table-heads ">
+              <th class="head-item mbr-fonts-style display-7"> ID&nbsp;</th>
               <th class="head-item mbr-fonts-style display-7"> Endereço&nbsp;</th>
               <th class="head-item mbr-fonts-style display-7"> Locatário</th>
               <th class="head-item mbr-fonts-style display-7">Vendedor</th>
               <th class="head-item mbr-fonts-style display-7 bg-secondary">Peródo</th>
-              <th>Valor</th>
+              <th class="head-item mbr-fonts-style display-7 bg-secondary">Valor</th>
               <th>Ação</th>
               <th>Ação</th>
             </tr>
