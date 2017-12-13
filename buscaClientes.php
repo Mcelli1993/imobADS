@@ -20,7 +20,7 @@ if ( !isset($_SESSION['usuario']) and !isset($_SESSION['senha']) ) {
 
 include ("PHP/conexion.php");
 $page = (isset($_GET['page'])?$_GET['page']:1);
-$perPage = (isset($_GET['perPage']) && ($_GET['perPage'])<=10 ? $_GET['perPage'] : 5);
+$perPage = (isset($_GET['perPage']) && ($_GET['perPage'])<=50 ? $_GET['perPage'] : 5);
 $start = ($page > 1) ? ($page * $perPage) - $perPage : 0;
 
 
@@ -185,6 +185,11 @@ $rows = $db->query($sql);
               <?php } ?>
             </tbody>
           </table>
+          <ul>
+        <?php for($i=1;$i<=$pages;$i++){?>
+			<li><a href="?page=<?php echo $i;?>&perPage=<?php echo $perPage;?>"><?php echo $i;?></a></li>
+		<?php }?>
+		</ul>
         </div>
         <div class="container table-info-container">
           <div class="row info">

@@ -194,6 +194,11 @@ $rows = $db->query($sql);
             <?php } ?>
           </tbody>
         </table>
+        <ul>
+        <?php for($i=1;$i<=$pages;$i++){?>
+			<li><a href="?page=<?php echo $i;?>&perPage=<?php echo $perPage;?>"><?php echo $i;?></a></li>
+		<?php }?>
+		</ul>
       </div>
       <div class="container table-info-container">
         <div class="row info">
