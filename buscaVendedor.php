@@ -148,7 +148,6 @@ $rows = $db->query($sql);
                 <th class="head-item mbr-fonts-style display-7">CPF</th>
                 <th class="head-item mbr-fonts-style display-7 bg-secondary">Endereço</th>
                 <th>CEP</th>
-                <th>Fone</th>
                 <th>Cargo</th>
                 <th>Ação</th>
                 <th>Ação</th>
@@ -164,7 +163,6 @@ $rows = $db->query($sql);
                 <td class="body-item mbr-fonts-style display-7"><?php echo $row['endereco']; ?></td>
                 <td><?php echo $row['cep']; ?></td>
                 <td class="body-item mbr-fonts-style display-7"><?php echo $row['cargo']; ?></td>
-                <td>1</td>
                 <td>
                   <ul class="nav nav-pills flex-column text-center">
                     <li class="nav-item">
