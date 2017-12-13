@@ -1,5 +1,26 @@
 <!DOCTYPE html>
 <?php
+
+session_cache_expire(60);
+
+session_start();
+
+//Caso o usuário não esteja autenticado, limpa os dados e redireciona
+if ( !isset($_SESSION['usuario']) and !isset($_SESSION['senha']) ) {
+	//Destrói
+	session_destroy();
+
+	//Limpa
+	unset ($_SESSION['usuario']);
+	unset ($_SESSION['senha']);
+	
+	//Redireciona para a página de autenticação
+	header('location:login.php');
+}
+
+
+
+
 include ("PHP/conexion.php");
 $page = (isset($_GET['page'])?$_GET['page']:1);
 $perPage = (isset($_GET['perPage']) && ($_GET['perPage'])<=50 ? $_GET['perPage'] : 5);

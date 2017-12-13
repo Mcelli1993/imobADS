@@ -25,38 +25,51 @@ try {
 
   
 
-    echo "<script>alert('LOGADO');</script>";
+    
 
     if ($stmt->rowCount()==1){
-    if (!isset($_COOKIE["acessos"])){
 
-        setcookie("acessos",1);
-    }
-        else{
 
-            setcookie("acessos", $_COOKIE["acessos"]+1);
+        session_cache_expire(60);
+        session_start();
+        
+        
+        $_SESSION['usuario'] = $usuario;
+        $_SESSION['senha']  = $senha;
+        echo "<script>alert('LOGADO');</script>";
+        header("location:../index.php");
+        
+
+
+//     if (!isset($_COOKIE["acessos"])){
+
+//         setcookie("acessos",1);
+//     }
+//         else{
+
+//             setcookie("acessos", $_COOKIE["acessos"]+1);
 
 
            
 
-            echo "<script>alert('LOGADO');</script>";
-            echo "Acessos".$_COOKIE["acessos"];
+//             echo "<script>alert('LOGADO');</script>";
+//             echo "Acessos".$_COOKIE["acessos"];
 
-            header("Location: ../index.php"); exit;
+//             header("Location: ../index.php"); exit;
 
     
-//         // Salva os dados encontrados na sessão
+// //         // Salva os dados encontrados na sessão
    
 
  
 
-//         // Redireciona o visitante
+// //         // Redireciona o visitante
    
-  }
+//   }
 
     }
 else{
-
+    echo "<script>alert('Falha no login');</script>";
     header("Location: ../login.php"); exit;
 }
 

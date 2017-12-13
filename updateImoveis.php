@@ -1,5 +1,23 @@
 
 <?php
+
+session_cache_expire(60);
+
+session_start();
+
+//Caso o usuÃ¡rio nÃ£o esteja autenticado, limpa os dados e redireciona
+if ( !isset($_SESSION['usuario']) and !isset($_SESSION['senha']) ) {
+	//DestrÃ³i
+	session_destroy();
+
+	//Limpa
+	unset ($_SESSION['usuario']);
+	unset ($_SESSION['senha']);
+	
+	//Redireciona para a pÃ¡gina de autenticaÃ§Ã£o
+	header('location:login.php');
+}
+
 include ("PHP/conexion.php");
 include 'buscaImoveis.php';
 
@@ -54,15 +72,15 @@ if(isset($_POST["inserir"])){
 
 	<hr><br>
         <form method="POST" action="">
-          <label>Endereço:</label>
+          <label>Endereï¿½o:</label>
           <input type="text" name="enderecoImovel" value="<?php echo $endereco;?>" class="form-control">
-          <label>Descrição:</label>
+          <label>Descriï¿½ï¿½o:</label>
           <input type="text" name="descricaoImovel" value="<?php echo $descricao;?>" class="form-control">
           <label>Proprietario:</label>
           <input type="text" name="proprietarioImovel" value="<?php echo $proprietario;?>" class="form-control">
           <label>CEP:</label>
           <input type="text" name="cepImovel" value="<?php echo $cep;?>" class="form-control">
-          <label>Preço:</label>
+          <label>Preï¿½o:</label>
           <input type="text" name="precoImovel" value="<?php echo $preco;?>" class="form-control">
           
           <!-- <input type="submit" name="atualizar" value="atualizar" class="btn btn-success"> -->

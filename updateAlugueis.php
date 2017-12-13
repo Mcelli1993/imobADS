@@ -1,5 +1,24 @@
 
 <?php
+
+session_cache_expire(60);
+
+session_start();
+
+//Caso o usuÃ¡rio nÃ£o esteja autenticado, limpa os dados e redireciona
+if ( !isset($_SESSION['usuario']) and !isset($_SESSION['senha']) ) {
+	//DestrÃ³i
+	session_destroy();
+
+	//Limpa
+	unset ($_SESSION['usuario']);
+	unset ($_SESSION['senha']);
+	
+	//Redireciona para a pÃ¡gina de autenticaÃ§Ã£o
+	header('location:login.php');
+}
+
+
 include ("PHP/conexion.php");
 include 'buscaAlugueis.php';
 
@@ -44,12 +63,12 @@ if(isset($_POST["inserir"])){
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-<title>Alteração Aluguéis</title>
+<title>Alteraï¿½ï¿½o Aluguï¿½is</title>
 </head>
 <body>
 <div class="container">
 	<div class="row" style="margin-top: 70px;">
-	<center><h1>Alteração Aluguéis</h1></center>
+	<center><h1>Alteraï¿½ï¿½o Aluguï¿½is</h1></center>
 	<div class="col-md-10 col-md-offset-1">	
 
 	<hr><br>
