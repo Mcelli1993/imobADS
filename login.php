@@ -61,10 +61,11 @@
     <div class="container">
       <!-- <div data-form-alert="" hidden="">Logado</div> -->
       <div class="row">
-        <div class="col-md-4"></div>
+        
         <div class="col-md-4">
           <form class="mbr-form mr-auto w-100 h-100" action="PHP/logincontrole.php" method="post"> <label>Nome</label>
-            <input type="text" name="name" class="form-control border border-dark form-control-lg" placeholder="Digite o nome"> <label>Senha</label>
+            <input type="text" name="name" class="form-control border border-dark form-control-lg" placeholder="Digite o nome"> 
+            <label>Senha</label>
             <input type="password" name="password" class="form-control" placeholder="Digite a senha">
             <div class="row">
               <div class="col-md-6 w-25">
