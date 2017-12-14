@@ -68,7 +68,7 @@ if(isset($_POST["inserir"])){
 <body>
 <div class="container">
 	<div class="row" style="margin-top: 70px;">
-	<center><h1>CRUD</h1></center>
+	<center><h1>Alteracao de Clientes</h1></center>
 	<div class="col-md-10 col-md-offset-1">	
 
 	<hr><br>
