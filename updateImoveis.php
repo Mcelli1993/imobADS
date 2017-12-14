@@ -72,15 +72,15 @@ if(isset($_POST["inserir"])){
 
 	<hr><br>
         <form method="POST" action="">
-          <label>Endere�o:</label>
+          <label>Endereço:</label>
           <input type="text" name="enderecoImovel" value="<?php echo $endereco;?>" class="form-control">
-          <label>Descri��o:</label>
+          <label>Descrição:</label>
           <input type="text" name="descricaoImovel" value="<?php echo $descricao;?>" class="form-control">
-          <label>Proprietario:</label>
+          <label>Proprietário:</label>
           <input type="text" name="proprietarioImovel" value="<?php echo $proprietario;?>" class="form-control">
           <label>CEP:</label>
           <input type="text" name="cepImovel" value="<?php echo $cep;?>" class="form-control">
-          <label>Pre�o:</label>
+          <label>Preço:</label>
           <input type="text" name="precoImovel" value="<?php echo $preco;?>" class="form-control">
           
           <!-- <input type="submit" name="atualizar" value="atualizar" class="btn btn-success"> -->

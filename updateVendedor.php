@@ -68,7 +68,7 @@ if(isset($_POST["inserir"])){
 <body>
 <div class="container">
 	<div class="row" style="margin-top: 70px;">
-	<center><h1>Alteracao de Funcionarios</h1></center>
+	<center><h1>Alteração de Funcionários</h1></center>
 	<div class="col-md-10 col-md-offset-1">	
 
 	<hr><br>
@@ -79,7 +79,7 @@ if(isset($_POST["inserir"])){
           <input type="text" name="rgUser" value="<?php echo $rg;?>" class="form-control">
           <label>CPF:</label>
           <input type="text" name="cpfUser" value="<?php echo $cpf;?>" class="form-control">
-          <label>Endereco:</label>
+          <label>Endereço:</label>
           <input type="text" name="enderecoUser" value="<?php echo $endereco;?>" class="form-control">
           <label>CEP:</label>
           <input type="text" name="cepUser" value="<?php echo $cep;?>" class="form-control">

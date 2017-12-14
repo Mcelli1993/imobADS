@@ -173,9 +173,9 @@ $rows = $db->query($sql);
             <?php } ?>
           </tbody>
         </table>
-        <ul>
+        <ul class="pagination" >
         <?php for($i=1;$i<=$pages;$i++){?>
-			<li><a href="?page=<?php echo $i;?>&perPage=<?php echo $perPage;?>"><?php echo $i;?></a></li>
+			<li class="page-item" ><a class="page-link" href="?page=<?php echo $i;?>&perPage=<?php echo $perPage;?>"><?php echo $i;?></a></li>
 		<?php }?>
 		</ul>
       </div>

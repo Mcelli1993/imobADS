@@ -63,12 +63,12 @@ if(isset($_POST["inserir"])){
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-<title>Altera��o Alugu�is</title>
+<title>Alteração Aluguéis</title>
 </head>
 <body>
 <div class="container">
 	<div class="row" style="margin-top: 70px;">
-	<center><h1>Altera��o Alugu�is</h1></center>
+	<center><h1>Alteração Aluguéis</h1></center>
 	<div class="col-md-10 col-md-offset-1">	
 
 	<hr><br>

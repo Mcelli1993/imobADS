@@ -63,19 +63,19 @@ if(isset($_POST["inserir"])){
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-<title>Altera��o Alugu�is</title>
+<title>Alteração Vendas</title>
 </head>
 <body>
 <div class="container">
 	<div class="row" style="margin-top: 70px;">
-	<center><h1>Altera��o Vendas</h1></center>
+	<center><h1>Alteração Vendas</h1></center>
 	<div class="col-md-10 col-md-offset-1">	
 
 	<hr><br>
         <form method="POST" action="">
           <label>Endereco:</label>
           <input type="text" name="enderecoVenda" value="<?php echo $endereco;?>" class="form-control">
-          <label>Proprietario:</label>
+          <label>Proprietário:</label>
           <input type="text" name="proprietarioVenda" value="<?php echo $proprietario;?>" class="form-control">
           <label>Vendedor:</label>
           <input type="text" name="funcionarioVenda" value="<?php echo $vendedor;?>" class="form-control">
