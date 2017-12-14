@@ -95,7 +95,7 @@ $rows = $db->query($sql);
           <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
             <input type="hidden" data-form-email="true" value="h2VWMt3UTaMRjlwWohQ4G4Zrl9f+wE0Hlwb9xjVaBvaEbhUic+D+ZN5VpxrjGEaonjOBhBD3qqxXEOVNCGQM7MKhfqmbFg99SLdd5teSBq58/FVhsSVKLLdwYoN/yNnV">
             <div class="mbr-subscribe input-group">
-              <input class="form-control" type="email" name="email" placeholder="Email" data-form-field="Email" required="" id="email-form3-1p"> <span class="input-group-btn"><button href="" type="submit" class="btn btn-primary display-4">SUBSCRIBE</button></span> </div>
+              <input style="visibility: hidden;" class="form-control" type="email" name="email" placeholder="Email" data-form-field="Email" required="" id="email-form3-1p"> <span class="input-group-btn"><button  style="visibility: hidden;" href="" type="submit" class="btn btn-primary display-4">SUBSCRIBE</button></span> </div>
           </form>
         </div>
       </div>

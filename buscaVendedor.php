@@ -86,23 +86,23 @@ $rows = $db->query($sql);
       <div class="row justify-content-center">
         <div class="title col-12 col-lg-8"> </div>
       </div>
-      <div class="row py-2 justify-content-center">
-        <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
-          <div data-form-alert="" hidden=""> Thanks for filling out the form! </div>
+      <div class="row py-2 justify-content-center"   >
+          <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
+         <div data-form-alert="" hidden=""> Thanks for filling out the form! </div>
           <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
             <input type="hidden" data-form-email="true" value="h2VWMt3UTaMRjlwWohQ4G4Zrl9f+wE0Hlwb9xjVaBvaEbhUic+D+ZN5VpxrjGEaonjOBhBD3qqxXEOVNCGQM7MKhfqmbFg99SLdd5teSBq58/FVhsSVKLLdwYoN/yNnV">
             <div class="mbr-subscribe input-group">
-              <input class="form-control" type="email" name="email" placeholder="Email" data-form-field="Email" required="" id="email-form3-1p"> <span class="input-group-btn"><button href="" type="submit" class="btn btn-primary display-4">SUBSCRIBE</button></span> </div>
+               <input style="visibility: hidden;" class="form-control" type="email" name="email" placeholder="Email" data-form-field="Email" required="" id="email-form3-1p"> <span class="input-group-btn"><button style="visibility: hidden;"  href="" type="submit" class="btn btn-primary display-4">SUBSCRIBE</button></span> </div>
           </form>
-        </div>
+        </div> 
       </div>
     </div>
   </section>
   <section class="mbr-section content4 cid-qzXt5Z88cv bg-warning" id="content4-1s" data-rv-view="2084">
     <div class="container">
       <div class="media-container-row bg-warning">
-        <div class="title col-12 col-md-8">
-          <h2 class="align-center pb-3 mbr-fonts-style display-2">Buscar Funcionário</h2>
+        <div class="title col-12 col-md-8   m-30 pb-10 ">
+          <h2 class="align-center mbr-fonts-style display-2  m-30 pb-10  ">Buscar Funcionário</h2>
           <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5"></h3>
         </div>
       </div>
